@@ -33,12 +33,13 @@ void main() {
 
     test('should return a word for today', () {
       final word = service.getTodaysWord();
+      final now = DateTime.now();
 
       expect(word, isNotNull);
       expect(word.date, isNotNull);
-      expect(word.date!.year, DateTime.now().year);
-      expect(word.date!.month, DateTime.now().month);
-      expect(word.date!.day, DateTime.now().day);
+      expect(word.date!.year, now.year);
+      expect(word.date!.month, now.month);
+      expect(word.date!.day, now.day);
     });
 
     test('should return deterministic word for same date', () {

@@ -1,0 +1,2922 @@
+[
+  {
+    "word": "Serendipity",
+    "definition": "The occurrence of events by chance in a happy or beneficial way.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˌserənˈdipədē/",
+    "exampleSentence": "Finding that rare book at the garage sale was pure serendipity.",
+    "etymology": "Coined by Horace Walpole in 1754 from the Persian fairy tale \"The Three Princes of Serendip\"."
+  },
+  {
+    "word": "Ephemeral",
+    "definition": "Lasting for a very short time.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈfem(ə)rəl/",
+    "exampleSentence": "The beauty of cherry blossoms is ephemeral.",
+    "etymology": "From Greek ephēmeros, meaning \"lasting only a day\"."
+  },
+  {
+    "word": "Eloquent",
+    "definition": "Fluent or persuasive in speaking or writing; clearly expressing feelings or meaning.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈeləkwənt/",
+    "exampleSentence": "She gave an eloquent speech that moved the entire audience.",
+    "etymology": "From Latin eloquens, from eloqui meaning \"to speak out\"."
+  },
+  {
+    "word": "Ubiquitous",
+    "definition": "Present, appearing, or found everywhere.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/yo͞oˈbikwədəs/",
+    "exampleSentence": "Smartphones have become ubiquitous in modern society.",
+    "etymology": "From Latin ubique meaning \"everywhere\"."
+  },
+  {
+    "word": "Ponder",
+    "definition": "Think about something carefully before making a decision.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈpändər/",
+    "exampleSentence": "She sat by the window to ponder the meaning of the letter.",
+    "etymology": "From Latin ponderare meaning \"to weigh, consider\"."
+  },
+  {
+    "word": "Resilient",
+    "definition": "Able to withstand or recover quickly from difficult conditions.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/rəˈzilyənt/",
+    "exampleSentence": "Children are often remarkably resilient in the face of adversity.",
+    "etymology": "From Latin resiliens, meaning \"springing back\"."
+  },
+  {
+    "word": "Catalyst",
+    "definition": "A person or thing that precipitates an event or change; a substance that increases the rate of a chemical reaction.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈkadlˌist/",
+    "exampleSentence": "The protest became a catalyst for political reform in the country.",
+    "etymology": "From Greek katalysis meaning \"dissolution\"."
+  },
+  {
+    "word": "Meticulous",
+    "definition": "Showing great attention to detail; very careful and precise.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/məˈtikyələs/",
+    "exampleSentence": "The artist was meticulous in her brushwork.",
+    "etymology": "From Latin meticulosus meaning \"fearful, timid\"."
+  },
+  {
+    "word": "Pragmatic",
+    "definition": "Dealing with things sensibly and realistically; based on practical rather than theoretical considerations.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/praɡˈmadik/",
+    "exampleSentence": "We need a pragmatic approach to solve this budget problem.",
+    "etymology": "From Greek pragmatikos meaning \"relating to fact\"."
+  },
+  {
+    "word": "Juxtapose",
+    "definition": "Place or deal with close together for contrasting effect.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈjəkstəˌpōz/",
+    "exampleSentence": "The artist chose to juxtapose light and dark elements in her painting.",
+    "etymology": "From French juxtaposer, from Latin juxta \"next\" + French poser \"to place\"."
+  },
+  {
+    "word": "Quintessential",
+    "definition": "Representing the most perfect or typical example of a quality or class.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌkwin(t)əˈsen(t)SHəl/",
+    "exampleSentence": "Paris is often considered the quintessential romantic city.",
+    "etymology": "From Medieval Latin quinta essentia meaning \"fifth essence\"."
+  },
+  {
+    "word": "Tenacious",
+    "definition": "Tending to keep a firm hold of something; not readily relinquishing a position or principle.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/təˈnāSHəs/",
+    "exampleSentence": "Her tenacious spirit helped her overcome many obstacles.",
+    "etymology": "From Latin tenax meaning \"holding fast\"."
+  },
+  {
+    "word": "Ameliorate",
+    "definition": "Make something bad or unsatisfactory better.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈmēlyəˌrāt/",
+    "exampleSentence": "The new policies aim to ameliorate the housing crisis.",
+    "etymology": "From Latin ameliorare meaning \"to make better\"."
+  },
+  {
+    "word": "Pervasive",
+    "definition": "Spreading widely throughout an area or a group of people; widespread.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/pərˈvāsiv/",
+    "exampleSentence": "The influence of social media has become pervasive in modern culture.",
+    "etymology": "From Latin pervadere meaning \"to go through\"."
+  },
+  {
+    "word": "Abate",
+    "definition": "Become less intense or widespread.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈbāt/",
+    "exampleSentence": "The storm finally abated at dawn.",
+    "etymology": null
+  },
+  {
+    "word": "Abdicate",
+    "definition": "Renounce one's throne or responsibility.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈabdəˌkāt/",
+    "exampleSentence": "The king abdicated in favor of his son.",
+    "etymology": null
+  },
+  {
+    "word": "Abridge",
+    "definition": "Shorten a text or piece of writing.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈbrij/",
+    "exampleSentence": "The textbook was abridged for younger readers.",
+    "etymology": null
+  },
+  {
+    "word": "Abscond",
+    "definition": "Leave hurriedly and secretly to escape.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/abˈskänd/",
+    "exampleSentence": "The suspect absconded with the funds.",
+    "etymology": null
+  },
+  {
+    "word": "Abstemious",
+    "definition": "Not self-indulgent; moderate in eating and drinking.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əbˈstēmēəs/",
+    "exampleSentence": "He led an abstemious life.",
+    "etymology": null
+  },
+  {
+    "word": "Accolade",
+    "definition": "An award or expression of praise.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈakəˌlād/",
+    "exampleSentence": "She received many accolades for her research.",
+    "etymology": null
+  },
+  {
+    "word": "Acerbic",
+    "definition": "Sharp and forthright in speech; harsh.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈsərbik/",
+    "exampleSentence": "His acerbic wit made him a feared critic.",
+    "etymology": null
+  },
+  {
+    "word": "Acquiesce",
+    "definition": "Accept something reluctantly without protest.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˌakwēˈes/",
+    "exampleSentence": "She acquiesced to their demands.",
+    "etymology": null
+  },
+  {
+    "word": "Admonish",
+    "definition": "Warn or reprimand firmly.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ədˈmäniSH/",
+    "exampleSentence": "The teacher admonished the class for talking.",
+    "etymology": null
+  },
+  {
+    "word": "Adroit",
+    "definition": "Clever or skillful in using hands or mind.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈdroit/",
+    "exampleSentence": "She was adroit at handling difficult clients.",
+    "etymology": null
+  },
+  {
+    "word": "Aesthetic",
+    "definition": "Concerned with beauty or the appreciation of beauty.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/esˈTHedik/",
+    "exampleSentence": "The building has great aesthetic appeal.",
+    "etymology": null
+  },
+  {
+    "word": "Affable",
+    "definition": "Friendly, good-natured, and easy to talk to.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈafəbəl/",
+    "exampleSentence": "He was an affable host.",
+    "etymology": null
+  },
+  {
+    "word": "Alacrity",
+    "definition": "Brisk and cheerful readiness.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/əˈlakrədē/",
+    "exampleSentence": "She accepted the invitation with alacrity.",
+    "etymology": null
+  },
+  {
+    "word": "Alleviate",
+    "definition": "Make suffering or a problem less severe.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈlēvēˌāt/",
+    "exampleSentence": "Medicine can alleviate the symptoms.",
+    "etymology": null
+  },
+  {
+    "word": "Amalgamate",
+    "definition": "Combine or unite to form one organization or structure.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈmalɡəˌmāt/",
+    "exampleSentence": "The two companies amalgamated last year.",
+    "etymology": null
+  },
+  {
+    "word": "Ambiguous",
+    "definition": "Open to more than one interpretation.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/amˈbiɡyo͞oəs/",
+    "exampleSentence": "His reply was deliberately ambiguous.",
+    "etymology": null
+  },
+  {
+    "word": "Amicable",
+    "definition": "Characterized by friendliness and absence of discord.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈamikəbəl/",
+    "exampleSentence": "They reached an amicable settlement.",
+    "etymology": null
+  },
+  {
+    "word": "Anachronism",
+    "definition": "A thing belonging to a different time period.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/əˈnakrəˌnizəm/",
+    "exampleSentence": "The sword was an anachronism in the modern army.",
+    "etymology": null
+  },
+  {
+    "word": "Anomaly",
+    "definition": "Something that deviates from what is standard or normal.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/əˈnäməlē/",
+    "exampleSentence": "The result was an anomaly that required investigation.",
+    "etymology": null
+  },
+  {
+    "word": "Antithesis",
+    "definition": "A person or thing that is the direct opposite of another.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/anˈtiTHəsəs/",
+    "exampleSentence": "Love is the antithesis of hate.",
+    "etymology": null
+  },
+  {
+    "word": "Apathetic",
+    "definition": "Showing or feeling no interest or enthusiasm.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌapəˈTHedik/",
+    "exampleSentence": "Voters were apathetic about the election.",
+    "etymology": null
+  },
+  {
+    "word": "Arduous",
+    "definition": "Involving or requiring strenuous effort.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈärjo͞oəs/",
+    "exampleSentence": "The arduous climb took six hours.",
+    "etymology": null
+  },
+  {
+    "word": "Articulate",
+    "definition": "Having or showing the ability to speak fluently.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ärˈtikyələt/",
+    "exampleSentence": "She was articulate and persuasive.",
+    "etymology": null
+  },
+  {
+    "word": "Ascertain",
+    "definition": "Find out for certain; make sure of.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˌasərˈtān/",
+    "exampleSentence": "We need to ascertain the facts.",
+    "etymology": null
+  },
+  {
+    "word": "Assiduous",
+    "definition": "Showing great care and perseverance.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈsijo͞oəs/",
+    "exampleSentence": "She was assiduous in her studies.",
+    "etymology": null
+  },
+  {
+    "word": "Atrophy",
+    "definition": "Gradually decline in effectiveness or vigor.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈatrəfē/",
+    "exampleSentence": "Muscles can atrophy without exercise.",
+    "etymology": null
+  },
+  {
+    "word": "Audacious",
+    "definition": "Showing a willingness to take bold risks.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ôˈdāSHəs/",
+    "exampleSentence": "It was an audacious plan.",
+    "etymology": null
+  },
+  {
+    "word": "Austere",
+    "definition": "Severe or strict in manner or appearance.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ôˈstir/",
+    "exampleSentence": "The room was austere and bare.",
+    "etymology": null
+  },
+  {
+    "word": "Avarice",
+    "definition": "Extreme greed for wealth or material gain.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈavərəs/",
+    "exampleSentence": "His avarice led to his downfall.",
+    "etymology": null
+  },
+  {
+    "word": "Banal",
+    "definition": "So lacking in originality as to be obvious and boring.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/bəˈnal/",
+    "exampleSentence": "The dialogue was banal and predictable.",
+    "etymology": null
+  },
+  {
+    "word": "Belligerent",
+    "definition": "Hostile and aggressive.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/bəˈlijərənt/",
+    "exampleSentence": "He was in a belligerent mood.",
+    "etymology": null
+  },
+  {
+    "word": "Benevolent",
+    "definition": "Well meaning and kindly.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/bəˈnevələnt/",
+    "exampleSentence": "A benevolent donor funded the project.",
+    "etymology": null
+  },
+  {
+    "word": "Brevity",
+    "definition": "Concise and exact use of words.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈbrevədē/",
+    "exampleSentence": "Brevity is the soul of wit.",
+    "etymology": null
+  },
+  {
+    "word": "Cacophony",
+    "definition": "A harsh mixture of sounds.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/kəˈkäfənē/",
+    "exampleSentence": "A cacophony of voices filled the room.",
+    "etymology": null
+  },
+  {
+    "word": "Candid",
+    "definition": "Truthful and straightforward.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈkandəd/",
+    "exampleSentence": "She was candid about her past.",
+    "etymology": null
+  },
+  {
+    "word": "Capricious",
+    "definition": "Given to sudden changes of mood or behavior.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kəˈpriSHəs/",
+    "exampleSentence": "The weather was capricious.",
+    "etymology": null
+  },
+  {
+    "word": "Clemency",
+    "definition": "Mercy; lenience.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈklemənsē/",
+    "exampleSentence": "The prisoner sought clemency from the governor.",
+    "etymology": null
+  },
+  {
+    "word": "Cogent",
+    "definition": "Clear, logical, and convincing.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈkōjənt/",
+    "exampleSentence": "She made a cogent argument.",
+    "etymology": null
+  },
+  {
+    "word": "Commensurate",
+    "definition": "Corresponding in size or degree.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kəˈmensərət/",
+    "exampleSentence": "Salary should be commensurate with experience.",
+    "etymology": null
+  },
+  {
+    "word": "Commodious",
+    "definition": "Roomy and comfortable.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kəˈmōdēəs/",
+    "exampleSentence": "They moved to a commodious house.",
+    "etymology": null
+  },
+  {
+    "word": "Complacent",
+    "definition": "Showing smug satisfaction with oneself.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kəmˈplāsnt/",
+    "exampleSentence": "We must not become complacent.",
+    "etymology": null
+  },
+  {
+    "word": "Concise",
+    "definition": "Giving a lot of information clearly in few words.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kənˈsīs/",
+    "exampleSentence": "Please keep your answers concise.",
+    "etymology": null
+  },
+  {
+    "word": "Confluence",
+    "definition": "The junction of two rivers or ideas.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈkänˌflo͞oəns/",
+    "exampleSentence": "A confluence of factors led to the crisis.",
+    "etymology": null
+  },
+  {
+    "word": "Consensus",
+    "definition": "General agreement.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/kənˈsensəs/",
+    "exampleSentence": "The committee reached a consensus.",
+    "etymology": null
+  },
+  {
+    "word": "Convoluted",
+    "definition": "Extremely complex and difficult to follow.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈkänvəˌlo͞odəd/",
+    "exampleSentence": "The plot was convoluted.",
+    "etymology": null
+  },
+  {
+    "word": "Corroborate",
+    "definition": "Confirm or give support to.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/kəˈräbəˌrāt/",
+    "exampleSentence": "The witness corroborated his story.",
+    "etymology": null
+  },
+  {
+    "word": "Credulous",
+    "definition": "Having or showing too great a readiness to believe.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈkrejələs/",
+    "exampleSentence": "Credulous investors lost money.",
+    "etymology": null
+  },
+  {
+    "word": "Cursory",
+    "definition": "Hasty and therefore not thorough.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈkərsərē/",
+    "exampleSentence": "He gave the report a cursory glance.",
+    "etymology": null
+  },
+  {
+    "word": "Dearth",
+    "definition": "A scarcity or lack of something.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/dərTH/",
+    "exampleSentence": "There was a dearth of evidence.",
+    "etymology": null
+  },
+  {
+    "word": "Debunk",
+    "definition": "Expose the falseness of a myth or idea.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/dēˈbəNGk/",
+    "exampleSentence": "The study debunked the claim.",
+    "etymology": null
+  },
+  {
+    "word": "Decorum",
+    "definition": "Behavior that conforms to accepted standards.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/dəˈkôrəm/",
+    "exampleSentence": "She behaved with decorum.",
+    "etymology": null
+  },
+  {
+    "word": "Deference",
+    "definition": "Humble submission and respect.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈdefərəns/",
+    "exampleSentence": "He treated her with deference.",
+    "etymology": null
+  },
+  {
+    "word": "Delineate",
+    "definition": "Describe or portray precisely.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/dəˈlinēˌāt/",
+    "exampleSentence": "The report delineated the plan.",
+    "etymology": null
+  },
+  {
+    "word": "Demur",
+    "definition": "Raise objections or show reluctance.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/dəˈmər/",
+    "exampleSentence": "She demurred at the suggestion.",
+    "etymology": null
+  },
+  {
+    "word": "Deride",
+    "definition": "Express contempt for; ridicule.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/dəˈrīd/",
+    "exampleSentence": "They derided his proposal.",
+    "etymology": null
+  },
+  {
+    "word": "Desiccate",
+    "definition": "Remove moisture from; dry out.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈdesəˌkāt/",
+    "exampleSentence": "The heat desiccated the soil.",
+    "etymology": null
+  },
+  {
+    "word": "Diatribe",
+    "definition": "A forceful and bitter verbal attack.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈdīəˌtrīb/",
+    "exampleSentence": "He launched into a diatribe.",
+    "etymology": null
+  },
+  {
+    "word": "Diligent",
+    "definition": "Having or showing care in one's work.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈdiləjənt/",
+    "exampleSentence": "She was a diligent student.",
+    "etymology": null
+  },
+  {
+    "word": "Disparage",
+    "definition": "Regard or represent as being of little worth.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/dəˈsperij/",
+    "exampleSentence": "He disparaged her achievements.",
+    "etymology": null
+  },
+  {
+    "word": "Dispassionate",
+    "definition": "Not influenced by strong emotion.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/disˈpaSHənət/",
+    "exampleSentence": "We need a dispassionate analysis.",
+    "etymology": null
+  },
+  {
+    "word": "Dissonance",
+    "definition": "Lack of harmony or agreement.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈdisənəns/",
+    "exampleSentence": "There was dissonance between his words and actions.",
+    "etymology": null
+  },
+  {
+    "word": "Ebullient",
+    "definition": "Cheerful and full of energy.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈbo͝olyənt/",
+    "exampleSentence": "She was in an ebullient mood.",
+    "etymology": null
+  },
+  {
+    "word": "Efficacy",
+    "definition": "The ability to produce a desired result.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈefəkəsē/",
+    "exampleSentence": "The efficacy of the drug was proven.",
+    "etymology": null
+  },
+  {
+    "word": "Egregious",
+    "definition": "Outstandingly bad; shocking.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈɡrējəs/",
+    "exampleSentence": "It was an egregious error.",
+    "etymology": null
+  },
+  {
+    "word": "Elucidate",
+    "definition": "Make clear; explain.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈlo͞osəˌdāt/",
+    "exampleSentence": "He elucidated the complex theory.",
+    "etymology": null
+  },
+  {
+    "word": "Embellish",
+    "definition": "Make more attractive by adding decorative details.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əmˈbeliSH/",
+    "exampleSentence": "She embellished the story.",
+    "etymology": null
+  },
+  {
+    "word": "Empirical",
+    "definition": "Based on observation or experience.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/emˈpirikəl/",
+    "exampleSentence": "We need empirical evidence.",
+    "etymology": null
+  },
+  {
+    "word": "Enervate",
+    "definition": "Cause someone to feel drained of energy.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈenərˌvāt/",
+    "exampleSentence": "The heat enervated the workers.",
+    "etymology": null
+  },
+  {
+    "word": "Enigma",
+    "definition": "A person or thing that is mysterious or difficult to understand.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/əˈniɡmə/",
+    "exampleSentence": "He remained an enigma to his colleagues.",
+    "etymology": null
+  },
+  {
+    "word": "Ephemeral",
+    "definition": "Lasting for a very short time.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əˈfem(ə)rəl/",
+    "exampleSentence": "Fame can be ephemeral.",
+    "etymology": null
+  },
+  {
+    "word": "Equanimity",
+    "definition": "Mental calmness and composure.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˌekwəˈnimədē/",
+    "exampleSentence": "She faced the news with equanimity.",
+    "etymology": null
+  },
+  {
+    "word": "Equivocate",
+    "definition": "Use ambiguous language to conceal the truth.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/əˈkwivəˌkāt/",
+    "exampleSentence": "Politicians often equivocate.",
+    "etymology": null
+  },
+  {
+    "word": "Erudite",
+    "definition": "Having or showing great knowledge or learning.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈer(y)əˌdīt/",
+    "exampleSentence": "He was an erudite scholar.",
+    "etymology": null
+  },
+  {
+    "word": "Esoteric",
+    "definition": "Intended for or understood by only a small group.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌesəˈterik/",
+    "exampleSentence": "The subject was esoteric.",
+    "etymology": null
+  },
+  {
+    "word": "Eulogy",
+    "definition": "A speech or piece of writing that praises someone highly.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈyo͞oləjē/",
+    "exampleSentence": "He delivered a moving eulogy.",
+    "etymology": null
+  },
+  {
+    "word": "Euphemism",
+    "definition": "A mild or indirect word for something harsh.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈyo͞ofəˌmizəm/",
+    "exampleSentence": "\"Pass away\" is a euphemism for \"die.\"",
+    "etymology": null
+  },
+  {
+    "word": "Exacerbate",
+    "definition": "Make a problem or situation worse.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/iɡˈzasərˌbāt/",
+    "exampleSentence": "The delay exacerbated the crisis.",
+    "etymology": null
+  },
+  {
+    "word": "Exemplary",
+    "definition": "Serving as a desirable model.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/iɡˈzemplərē/",
+    "exampleSentence": "Her conduct was exemplary.",
+    "etymology": null
+  },
+  {
+    "word": "Exhaustive",
+    "definition": "Examining all possibilities; thorough.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/iɡˈzôstiv/",
+    "exampleSentence": "They conducted an exhaustive search.",
+    "etymology": null
+  },
+  {
+    "word": "Exigent",
+    "definition": "Pressing; demanding immediate attention.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈeksəjənt/",
+    "exampleSentence": "We face exigent circumstances.",
+    "etymology": null
+  },
+  {
+    "word": "Exonerate",
+    "definition": "Absolve from blame or guilt.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/iɡˈzänəˌrāt/",
+    "exampleSentence": "New evidence exonerated the suspect.",
+    "etymology": null
+  },
+  {
+    "word": "Expedient",
+    "definition": "Convenient and practical though possibly improper.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ikˈspēdēənt/",
+    "exampleSentence": "It was expedient to agree.",
+    "etymology": null
+  },
+  {
+    "word": "Explicit",
+    "definition": "Stated clearly and in detail.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ikˈsplisit/",
+    "exampleSentence": "She gave explicit instructions.",
+    "etymology": null
+  },
+  {
+    "word": "Extol",
+    "definition": "Praise enthusiastically.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ikˈstōl/",
+    "exampleSentence": "Critics extolled the film.",
+    "etymology": null
+  },
+  {
+    "word": "Fallacious",
+    "definition": "Based on a mistaken belief.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/fəˈlāSHəs/",
+    "exampleSentence": "The argument was fallacious.",
+    "etymology": null
+  },
+  {
+    "word": "Fastidious",
+    "definition": "Very attentive to accuracy and detail.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/faˈstidēəs/",
+    "exampleSentence": "She was fastidious about her work.",
+    "etymology": null
+  },
+  {
+    "word": "Fatuous",
+    "definition": "Silly and pointless.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈfaCHo͞oəs/",
+    "exampleSentence": "He made a fatuous remark.",
+    "etymology": null
+  },
+  {
+    "word": "Fervent",
+    "definition": "Having or displaying passionate intensity.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈfərvənt/",
+    "exampleSentence": "She was a fervent supporter.",
+    "etymology": null
+  },
+  {
+    "word": "Frugal",
+    "definition": "Sparing or economical with money or food.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈfro͞oɡəl/",
+    "exampleSentence": "He led a frugal life.",
+    "etymology": null
+  },
+  {
+    "word": "Futile",
+    "definition": "Incapable of producing any useful result.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈfyo͞otl/",
+    "exampleSentence": "Resistance was futile.",
+    "etymology": null
+  },
+  {
+    "word": "Gregarious",
+    "definition": "Fond of company; sociable.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ɡrəˈɡerēəs/",
+    "exampleSentence": "She was gregarious and outgoing.",
+    "etymology": null
+  },
+  {
+    "word": "Hackneyed",
+    "definition": "Overused and unoriginal.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈhaknēd/",
+    "exampleSentence": "The speech was full of hackneyed phrases.",
+    "etymology": null
+  },
+  {
+    "word": "Harangue",
+    "definition": "A lengthy and aggressive speech.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/həˈraNG/",
+    "exampleSentence": "He delivered a harangue to the crowd.",
+    "etymology": null
+  },
+  {
+    "word": "Hegemony",
+    "definition": "Leadership or dominance of one group over others.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/həˈjemənē/",
+    "exampleSentence": "Cultural hegemony shaped the era.",
+    "etymology": null
+  },
+  {
+    "word": "Iconoclast",
+    "definition": "A person who attacks cherished beliefs.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/īˈkänəˌklast/",
+    "exampleSentence": "He was an iconoclast in the art world.",
+    "etymology": null
+  },
+  {
+    "word": "Idiosyncratic",
+    "definition": "Peculiar to an individual.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌidēōsiNGˈkratik/",
+    "exampleSentence": "She had an idiosyncratic style.",
+    "etymology": null
+  },
+  {
+    "word": "Impetuous",
+    "definition": "Acting or done quickly without thought.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/imˈpeCHo͞oəs/",
+    "exampleSentence": "He made an impetuous decision.",
+    "etymology": null
+  },
+  {
+    "word": "Implacable",
+    "definition": "Unable to be placated.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/imˈplakəbəl/",
+    "exampleSentence": "She was implacable in her opposition.",
+    "etymology": null
+  },
+  {
+    "word": "Inchoate",
+    "definition": "Just begun and not fully formed.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈkōət/",
+    "exampleSentence": "The plan was still inchoate.",
+    "etymology": null
+  },
+  {
+    "word": "Incipient",
+    "definition": "In an initial stage; beginning to happen.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈsipēənt/",
+    "exampleSentence": "Incipient signs of recovery appeared.",
+    "etymology": null
+  },
+  {
+    "word": "Incorrigible",
+    "definition": "Not able to be corrected or reformed.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈkôrəjəbəl/",
+    "exampleSentence": "He was an incorrigible optimist.",
+    "etymology": null
+  },
+  {
+    "word": "Indefatigable",
+    "definition": "Persisting tirelessly.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌindəˈfadəɡəbəl/",
+    "exampleSentence": "She was an indefatigable campaigner.",
+    "etymology": null
+  },
+  {
+    "word": "Indolent",
+    "definition": "Wanting to avoid activity; lazy.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈindələnt/",
+    "exampleSentence": "He led an indolent life.",
+    "etymology": null
+  },
+  {
+    "word": "Ineffable",
+    "definition": "Too great or extreme to be expressed in words.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈefəbəl/",
+    "exampleSentence": "The view was ineffable.",
+    "etymology": null
+  },
+  {
+    "word": "Innocuous",
+    "definition": "Not harmful or offensive.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/iˈnäkyo͞oəs/",
+    "exampleSentence": "The remark seemed innocuous.",
+    "etymology": null
+  },
+  {
+    "word": "Insipid",
+    "definition": "Lacking flavor or interest.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈsipəd/",
+    "exampleSentence": "The soup was insipid.",
+    "etymology": null
+  },
+  {
+    "word": "Intractable",
+    "definition": "Hard to control or deal with.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈtraktəbəl/",
+    "exampleSentence": "The problem proved intractable.",
+    "etymology": null
+  },
+  {
+    "word": "Intrepid",
+    "definition": "Fearless; adventurous.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈtrepəd/",
+    "exampleSentence": "The intrepid explorer set out.",
+    "etymology": null
+  },
+  {
+    "word": "Inundate",
+    "definition": "Overwhelm with things or people.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈinənˌdāt/",
+    "exampleSentence": "We were inundated with requests.",
+    "etymology": null
+  },
+  {
+    "word": "Inveterate",
+    "definition": "Having a particular habit of long standing.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/inˈvedərət/",
+    "exampleSentence": "He was an inveterate gambler.",
+    "etymology": null
+  },
+  {
+    "word": "Irascible",
+    "definition": "Easily provoked to anger.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/iˈrasəbəl/",
+    "exampleSentence": "He had an irascible temper.",
+    "etymology": null
+  },
+  {
+    "word": "Laconic",
+    "definition": "Using very few words.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ləˈkänik/",
+    "exampleSentence": "He was laconic in his replies.",
+    "etymology": null
+  },
+  {
+    "word": "Lament",
+    "definition": "Express regret or disappointment.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ləˈment/",
+    "exampleSentence": "She lamented the loss.",
+    "etymology": null
+  },
+  {
+    "word": "Lethargic",
+    "definition": "Affected by lethargy; sluggish.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ləˈTHärjik/",
+    "exampleSentence": "The heat made everyone lethargic.",
+    "etymology": null
+  },
+  {
+    "word": "Levity",
+    "definition": "Humor or lightness of manner.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈlevədē/",
+    "exampleSentence": "The moment needed levity.",
+    "etymology": null
+  },
+  {
+    "word": "Loquacious",
+    "definition": "Tending to talk a great deal.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/lōˈkwāSHəs/",
+    "exampleSentence": "She was loquacious at the party.",
+    "etymology": null
+  },
+  {
+    "word": "Lucid",
+    "definition": "Expressed clearly; easy to understand.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈlo͞osəd/",
+    "exampleSentence": "She gave a lucid explanation.",
+    "etymology": null
+  },
+  {
+    "word": "Luminous",
+    "definition": "Full of or shedding light.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈlo͞omənəs/",
+    "exampleSentence": "The sky was luminous at dawn.",
+    "etymology": null
+  },
+  {
+    "word": "Magnanimous",
+    "definition": "Very generous or forgiving.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/maɡˈnanəməs/",
+    "exampleSentence": "She was magnanimous in victory.",
+    "etymology": null
+  },
+  {
+    "word": "Malleable",
+    "definition": "Easily influenced or changed.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈmalēəbəl/",
+    "exampleSentence": "Young minds are malleable.",
+    "etymology": null
+  },
+  {
+    "word": "Maverick",
+    "definition": "An unorthodox or independent-minded person.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈmavərik/",
+    "exampleSentence": "He was a maverick in the industry.",
+    "etymology": null
+  },
+  {
+    "word": "Mendacious",
+    "definition": "Not telling the truth; lying.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/menˈdāSHəs/",
+    "exampleSentence": "He was mendacious under oath.",
+    "etymology": null
+  },
+  {
+    "word": "Mercurial",
+    "definition": "Subject to sudden or unpredictable changes.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/mərˈkyo͝orēəl/",
+    "exampleSentence": "She had a mercurial temperament.",
+    "etymology": null
+  },
+  {
+    "word": "Meticulous",
+    "definition": "Showing great attention to detail.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/məˈtikyələs/",
+    "exampleSentence": "He was meticulous in his work.",
+    "etymology": null
+  },
+  {
+    "word": "Mitigate",
+    "definition": "Make less severe, serious, or painful.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈmidəˌɡāt/",
+    "exampleSentence": "Measures to mitigate the damage.",
+    "etymology": null
+  },
+  {
+    "word": "Mundane",
+    "definition": "Lacking interest or excitement.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/mənˈdān/",
+    "exampleSentence": "They discussed mundane matters.",
+    "etymology": null
+  },
+  {
+    "word": "Nebulous",
+    "definition": "In the form of a cloud or haze; vague.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈnebyələs/",
+    "exampleSentence": "The concept was nebulous.",
+    "etymology": null
+  },
+  {
+    "word": "Nefarious",
+    "definition": "Wicked or criminal.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/nəˈferēəs/",
+    "exampleSentence": "They had nefarious intentions.",
+    "etymology": null
+  },
+  {
+    "word": "Negligible",
+    "definition": "So small or unimportant as to be not worth considering.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈneɡlijəbəl/",
+    "exampleSentence": "The risk was negligible.",
+    "etymology": null
+  },
+  {
+    "word": "Nonchalant",
+    "definition": "Feeling or appearing casually calm.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌnänSHəˈlänt/",
+    "exampleSentence": "She was nonchalant about the result.",
+    "etymology": null
+  },
+  {
+    "word": "Novel",
+    "definition": "New or unusual in an interesting way.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈnävəl/",
+    "exampleSentence": "A novel approach to the problem.",
+    "etymology": null
+  },
+  {
+    "word": "Obfuscate",
+    "definition": "Make obscure, unclear, or unintelligible.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈäbfəˌskāt/",
+    "exampleSentence": "He obfuscated the issue.",
+    "etymology": null
+  },
+  {
+    "word": "Obsequious",
+    "definition": "Obedient or attentive to an excessive degree.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/əbˈsēkwēəs/",
+    "exampleSentence": "The waiter was obsequious.",
+    "etymology": null
+  },
+  {
+    "word": "Ostentatious",
+    "definition": "Characterized by vulgar or pretentious display.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌästenˈtāSHəs/",
+    "exampleSentence": "The mansion was ostentatious.",
+    "etymology": null
+  },
+  {
+    "word": "Paradigm",
+    "definition": "A typical example or pattern of something.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈperəˌdīm/",
+    "exampleSentence": "A new paradigm in science.",
+    "etymology": null
+  },
+  {
+    "word": "Paramount",
+    "definition": "More important than anything else.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈperəˌmount/",
+    "exampleSentence": "Safety is paramount.",
+    "etymology": null
+  },
+  {
+    "word": "Pedantic",
+    "definition": "Overly concerned with minute details.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/pəˈdantik/",
+    "exampleSentence": "His pedantic corrections annoyed everyone.",
+    "etymology": null
+  },
+  {
+    "word": "Penchant",
+    "definition": "A strong or habitual liking for something.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈpenCHənt/",
+    "exampleSentence": "She had a penchant for chocolate.",
+    "etymology": null
+  },
+  {
+    "word": "Perfunctory",
+    "definition": "Carried out with a minimum of effort.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/pərˈfəNGktərē/",
+    "exampleSentence": "He gave a perfunctory nod.",
+    "etymology": null
+  },
+  {
+    "word": "Peripheral",
+    "definition": "Relating to or situated on the edge.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/pəˈrifərəl/",
+    "exampleSentence": "The issue was peripheral to the main debate.",
+    "etymology": null
+  },
+  {
+    "word": "Perspicacious",
+    "definition": "Having a ready understanding of things.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌpərspiˈkāSHəs/",
+    "exampleSentence": "She was perspicacious and quick.",
+    "etymology": null
+  },
+  {
+    "word": "Pertinent",
+    "definition": "Relevant or applicable to a particular matter.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈpərtnənt/",
+    "exampleSentence": "Please keep your comments pertinent.",
+    "etymology": null
+  },
+  {
+    "word": "Pervade",
+    "definition": "Spread through and be present in every part of.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/pərˈvād/",
+    "exampleSentence": "A sense of dread pervaded the room.",
+    "etymology": null
+  },
+  {
+    "word": "Pragmatic",
+    "definition": "Dealing with things sensibly and realistically.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/praɡˈmadik/",
+    "exampleSentence": "We need a pragmatic solution.",
+    "etymology": null
+  },
+  {
+    "word": "Precarious",
+    "definition": "Not securely held or in position.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/prəˈkerēəs/",
+    "exampleSentence": "The ladder was in a precarious position.",
+    "etymology": null
+  },
+  {
+    "word": "Precedent",
+    "definition": "An earlier event or action serving as an example.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈpresədnt/",
+    "exampleSentence": "The case set a precedent.",
+    "etymology": null
+  },
+  {
+    "word": "Preclude",
+    "definition": "Prevent from happening; make impossible.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/prēˈklo͞od/",
+    "exampleSentence": "The law precludes such action.",
+    "etymology": null
+  },
+  {
+    "word": "Predilection",
+    "definition": "A preference or special liking for something.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˌpredlˈekSHən/",
+    "exampleSentence": "She had a predilection for jazz.",
+    "etymology": null
+  },
+  {
+    "word": "Preeminent",
+    "definition": "Surpassing all others; very distinguished.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/prēˈemənənt/",
+    "exampleSentence": "He was the preeminent scholar of his day.",
+    "etymology": null
+  },
+  {
+    "word": "Pristine",
+    "definition": "In its original condition; unspoiled.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈprisˌtēn/",
+    "exampleSentence": "The beach was pristine.",
+    "etymology": null
+  },
+  {
+    "word": "Profligate",
+    "definition": "Recklessly extravagant or wasteful.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈpräfliɡət/",
+    "exampleSentence": "Profligate spending led to bankruptcy.",
+    "etymology": null
+  },
+  {
+    "word": "Prolific",
+    "definition": "Producing much fruit or foliage or many offspring.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/prəˈlifik/",
+    "exampleSentence": "She was a prolific writer.",
+    "etymology": null
+  },
+  {
+    "word": "Prudent",
+    "definition": "Acting with or showing care for the future.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈpro͞odnt/",
+    "exampleSentence": "It would be prudent to wait.",
+    "etymology": null
+  },
+  {
+    "word": "Pugnacious",
+    "definition": "Eager or quick to argue or fight.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/pəɡˈnāSHəs/",
+    "exampleSentence": "He had a pugnacious demeanor.",
+    "etymology": null
+  },
+  {
+    "word": "Pulchritude",
+    "definition": "Beauty.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈpəlkrəˌt(y)o͞od/",
+    "exampleSentence": "She was known for her pulchritude.",
+    "etymology": null
+  },
+  {
+    "word": "Quandary",
+    "definition": "A state of perplexity or uncertainty.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈkwändərē/",
+    "exampleSentence": "She was in a quandary about what to do.",
+    "etymology": null
+  },
+  {
+    "word": "Quell",
+    "definition": "Put an end to; suppress.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/kwel/",
+    "exampleSentence": "Troops quelled the uprising.",
+    "etymology": null
+  },
+  {
+    "word": "Quixotic",
+    "definition": "Extremely idealistic; unrealistic.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/kwikˈsädik/",
+    "exampleSentence": "It was a quixotic quest.",
+    "etymology": null
+  },
+  {
+    "word": "Rancor",
+    "definition": "Bitterness or resentfulness.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/ˈraNGkər/",
+    "exampleSentence": "There was rancor between the two families.",
+    "etymology": null
+  },
+  {
+    "word": "Rapid",
+    "definition": "Happening in a short time or at a great rate.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈrapəd/",
+    "exampleSentence": "Rapid change swept the industry.",
+    "etymology": null
+  },
+  {
+    "word": "Reticent",
+    "definition": "Not revealing one's thoughts or feelings readily.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈretəsnt/",
+    "exampleSentence": "He was reticent about his past.",
+    "etymology": null
+  },
+  {
+    "word": "Revere",
+    "definition": "Feel deep respect or admiration for.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/rəˈvir/",
+    "exampleSentence": "She was revered by her students.",
+    "etymology": null
+  },
+  {
+    "word": "Sage",
+    "definition": "A wise person.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/sāj/",
+    "exampleSentence": "The sage offered advice.",
+    "etymology": null
+  },
+  {
+    "word": "Salient",
+    "definition": "Most noticeable or important.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈsālēənt/",
+    "exampleSentence": "The salient points were summarized.",
+    "etymology": null
+  },
+  {
+    "word": "Sanctimonious",
+    "definition": "Making a show of being morally superior.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌsaNGktəˈmōnēəs/",
+    "exampleSentence": "His sanctimonious tone annoyed them.",
+    "etymology": null
+  },
+  {
+    "word": "Scrupulous",
+    "definition": "Diligent, thorough, and extremely attentive to detail.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈskro͞opyələs/",
+    "exampleSentence": "She was scrupulous in her research.",
+    "etymology": null
+  },
+  {
+    "word": "Solicitous",
+    "definition": "Characterized by or showing interest or concern.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/səˈlisədəs/",
+    "exampleSentence": "She was solicitous about his health.",
+    "etymology": null
+  },
+  {
+    "word": "Sporadic",
+    "definition": "Occurring at irregular intervals.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/spəˈradik/",
+    "exampleSentence": "Sporadic outbreaks were reported.",
+    "etymology": null
+  },
+  {
+    "word": "Stoic",
+    "definition": "Enduring pain and hardship without complaint.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈstōik/",
+    "exampleSentence": "She remained stoic throughout.",
+    "etymology": null
+  },
+  {
+    "word": "Stolid",
+    "definition": "Calm, dependable, and showing little emotion.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈstäləd/",
+    "exampleSentence": "He was a stolid presence.",
+    "etymology": null
+  },
+  {
+    "word": "Substantiate",
+    "definition": "Provide evidence to support or prove.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/səbˈstanSHēˌāt/",
+    "exampleSentence": "He could not substantiate the claim.",
+    "etymology": null
+  },
+  {
+    "word": "Superfluous",
+    "definition": "Unnecessary, especially through being more than enough.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/so͞oˈpərflo͞oəs/",
+    "exampleSentence": "The extra details were superfluous.",
+    "etymology": null
+  },
+  {
+    "word": "Taciturn",
+    "definition": "Reserved or uncommunicative in speech.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈtasərˌtərn/",
+    "exampleSentence": "He was taciturn by nature.",
+    "etymology": null
+  },
+  {
+    "word": "Tenuous",
+    "definition": "Very weak or slight.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈtenyo͞oəs/",
+    "exampleSentence": "The connection was tenuous.",
+    "etymology": null
+  },
+  {
+    "word": "Terse",
+    "definition": "Sparing in the use of words; abrupt.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/tərs/",
+    "exampleSentence": "She gave a terse reply.",
+    "etymology": null
+  },
+  {
+    "word": "Tranquil",
+    "definition": "Free from disturbance; calm.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈtraNGkwəl/",
+    "exampleSentence": "The garden was tranquil.",
+    "etymology": null
+  },
+  {
+    "word": "Ubiquitous",
+    "definition": "Present, appearing, or found everywhere.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/yo͞oˈbikwədəs/",
+    "exampleSentence": "Smartphones are ubiquitous.",
+    "etymology": null
+  },
+  {
+    "word": "Unilateral",
+    "definition": "Performed by or affecting only one side.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˌyo͞onəˈlatərəl/",
+    "exampleSentence": "They took unilateral action.",
+    "etymology": null
+  },
+  {
+    "word": "Vacillate",
+    "definition": "Alternate between different opinions or actions.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈvasəˌlāt/",
+    "exampleSentence": "He vacillated between the two options.",
+    "etymology": null
+  },
+  {
+    "word": "Venerable",
+    "definition": "Accorded a great deal of respect.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈvenərəbəl/",
+    "exampleSentence": "The venerable professor spoke.",
+    "etymology": null
+  },
+  {
+    "word": "Verbose",
+    "definition": "Using more words than needed.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/vərˈbōs/",
+    "exampleSentence": "The report was verbose.",
+    "etymology": null
+  },
+  {
+    "word": "Vex",
+    "definition": "Make someone feel frustrated or annoyed.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/veks/",
+    "exampleSentence": "The problem vexed the engineers.",
+    "etymology": null
+  },
+  {
+    "word": "Viable",
+    "definition": "Capable of working successfully.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈvīəbəl/",
+    "exampleSentence": "We need a viable alternative.",
+    "etymology": null
+  },
+  {
+    "word": "Vicarious",
+    "definition": "Experienced through another person.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/vīˈkerēəs/",
+    "exampleSentence": "She took vicarious pleasure in his success.",
+    "etymology": null
+  },
+  {
+    "word": "Vilify",
+    "definition": "Speak or write about in an abusively disparaging way.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈviləˌfī/",
+    "exampleSentence": "The press vilified him.",
+    "etymology": null
+  },
+  {
+    "word": "Vindicate",
+    "definition": "Clear of blame or suspicion.",
+    "partOfSpeech": "verb",
+    "pronunciation": "/ˈvindəˌkāt/",
+    "exampleSentence": "The verdict vindicated her.",
+    "etymology": null
+  },
+  {
+    "word": "Vociferous",
+    "definition": "Expressing feelings or opinions in a loud way.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/vōˈsifərəs/",
+    "exampleSentence": "Vociferous protesters gathered.",
+    "etymology": null
+  },
+  {
+    "word": "Wary",
+    "definition": "Feeling or showing caution about possible dangers.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈwerē/",
+    "exampleSentence": "Be wary of strangers.",
+    "etymology": null
+  },
+  {
+    "word": "Whimsical",
+    "definition": "Playfully quaint or fanciful.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈ(h)wimzikəl/",
+    "exampleSentence": "The story had a whimsical tone.",
+    "etymology": null
+  },
+  {
+    "word": "Zealous",
+    "definition": "Having or showing great energy or enthusiasm.",
+    "partOfSpeech": "adjective",
+    "pronunciation": "/ˈzeləs/",
+    "exampleSentence": "She was a zealous advocate.",
+    "etymology": null
+  },
+  {
+    "word": "Vocabulary205",
+    "definition": "An interesting word for day 205 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary205 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary206",
+    "definition": "An interesting word for day 206 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary206 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary207",
+    "definition": "An interesting word for day 207 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary207 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary208",
+    "definition": "An interesting word for day 208 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary208 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary209",
+    "definition": "An interesting word for day 209 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary209 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary210",
+    "definition": "An interesting word for day 210 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary210 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary211",
+    "definition": "An interesting word for day 211 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary211 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary212",
+    "definition": "An interesting word for day 212 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary212 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary213",
+    "definition": "An interesting word for day 213 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary213 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary214",
+    "definition": "An interesting word for day 214 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary214 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary215",
+    "definition": "An interesting word for day 215 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary215 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary216",
+    "definition": "An interesting word for day 216 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary216 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary217",
+    "definition": "An interesting word for day 217 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary217 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary218",
+    "definition": "An interesting word for day 218 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary218 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary219",
+    "definition": "An interesting word for day 219 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary219 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary220",
+    "definition": "An interesting word for day 220 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary220 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary221",
+    "definition": "An interesting word for day 221 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary221 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary222",
+    "definition": "An interesting word for day 222 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary222 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary223",
+    "definition": "An interesting word for day 223 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary223 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary224",
+    "definition": "An interesting word for day 224 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary224 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary225",
+    "definition": "An interesting word for day 225 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary225 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary226",
+    "definition": "An interesting word for day 226 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary226 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary227",
+    "definition": "An interesting word for day 227 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary227 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary228",
+    "definition": "An interesting word for day 228 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary228 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary229",
+    "definition": "An interesting word for day 229 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary229 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary230",
+    "definition": "An interesting word for day 230 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary230 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary231",
+    "definition": "An interesting word for day 231 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary231 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary232",
+    "definition": "An interesting word for day 232 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary232 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary233",
+    "definition": "An interesting word for day 233 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary233 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary234",
+    "definition": "An interesting word for day 234 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary234 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary235",
+    "definition": "An interesting word for day 235 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary235 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary236",
+    "definition": "An interesting word for day 236 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary236 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary237",
+    "definition": "An interesting word for day 237 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary237 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary238",
+    "definition": "An interesting word for day 238 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary238 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary239",
+    "definition": "An interesting word for day 239 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary239 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary240",
+    "definition": "An interesting word for day 240 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary240 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary241",
+    "definition": "An interesting word for day 241 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary241 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary242",
+    "definition": "An interesting word for day 242 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary242 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary243",
+    "definition": "An interesting word for day 243 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary243 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary244",
+    "definition": "An interesting word for day 244 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary244 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary245",
+    "definition": "An interesting word for day 245 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary245 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary246",
+    "definition": "An interesting word for day 246 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary246 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary247",
+    "definition": "An interesting word for day 247 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary247 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary248",
+    "definition": "An interesting word for day 248 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary248 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary249",
+    "definition": "An interesting word for day 249 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary249 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary250",
+    "definition": "An interesting word for day 250 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary250 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary251",
+    "definition": "An interesting word for day 251 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary251 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary252",
+    "definition": "An interesting word for day 252 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary252 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary253",
+    "definition": "An interesting word for day 253 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary253 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary254",
+    "definition": "An interesting word for day 254 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary254 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary255",
+    "definition": "An interesting word for day 255 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary255 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary256",
+    "definition": "An interesting word for day 256 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary256 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary257",
+    "definition": "An interesting word for day 257 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary257 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary258",
+    "definition": "An interesting word for day 258 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary258 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary259",
+    "definition": "An interesting word for day 259 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary259 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary260",
+    "definition": "An interesting word for day 260 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary260 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary261",
+    "definition": "An interesting word for day 261 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary261 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary262",
+    "definition": "An interesting word for day 262 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary262 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary263",
+    "definition": "An interesting word for day 263 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary263 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary264",
+    "definition": "An interesting word for day 264 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary264 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary265",
+    "definition": "An interesting word for day 265 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary265 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary266",
+    "definition": "An interesting word for day 266 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary266 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary267",
+    "definition": "An interesting word for day 267 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary267 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary268",
+    "definition": "An interesting word for day 268 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary268 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary269",
+    "definition": "An interesting word for day 269 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary269 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary270",
+    "definition": "An interesting word for day 270 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary270 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary271",
+    "definition": "An interesting word for day 271 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary271 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary272",
+    "definition": "An interesting word for day 272 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary272 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary273",
+    "definition": "An interesting word for day 273 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary273 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary274",
+    "definition": "An interesting word for day 274 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary274 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary275",
+    "definition": "An interesting word for day 275 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary275 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary276",
+    "definition": "An interesting word for day 276 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary276 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary277",
+    "definition": "An interesting word for day 277 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary277 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary278",
+    "definition": "An interesting word for day 278 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary278 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary279",
+    "definition": "An interesting word for day 279 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary279 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary280",
+    "definition": "An interesting word for day 280 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary280 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary281",
+    "definition": "An interesting word for day 281 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary281 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary282",
+    "definition": "An interesting word for day 282 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary282 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary283",
+    "definition": "An interesting word for day 283 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary283 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary284",
+    "definition": "An interesting word for day 284 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary284 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary285",
+    "definition": "An interesting word for day 285 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary285 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary286",
+    "definition": "An interesting word for day 286 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary286 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary287",
+    "definition": "An interesting word for day 287 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary287 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary288",
+    "definition": "An interesting word for day 288 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary288 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary289",
+    "definition": "An interesting word for day 289 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary289 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary290",
+    "definition": "An interesting word for day 290 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary290 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary291",
+    "definition": "An interesting word for day 291 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary291 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary292",
+    "definition": "An interesting word for day 292 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary292 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary293",
+    "definition": "An interesting word for day 293 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary293 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary294",
+    "definition": "An interesting word for day 294 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary294 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary295",
+    "definition": "An interesting word for day 295 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary295 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary296",
+    "definition": "An interesting word for day 296 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary296 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary297",
+    "definition": "An interesting word for day 297 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary297 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary298",
+    "definition": "An interesting word for day 298 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary298 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary299",
+    "definition": "An interesting word for day 299 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary299 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary300",
+    "definition": "An interesting word for day 300 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary300 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary301",
+    "definition": "An interesting word for day 301 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary301 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary302",
+    "definition": "An interesting word for day 302 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary302 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary303",
+    "definition": "An interesting word for day 303 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary303 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary304",
+    "definition": "An interesting word for day 304 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary304 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary305",
+    "definition": "An interesting word for day 305 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary305 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary306",
+    "definition": "An interesting word for day 306 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary306 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary307",
+    "definition": "An interesting word for day 307 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary307 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary308",
+    "definition": "An interesting word for day 308 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary308 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary309",
+    "definition": "An interesting word for day 309 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary309 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary310",
+    "definition": "An interesting word for day 310 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary310 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary311",
+    "definition": "An interesting word for day 311 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary311 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary312",
+    "definition": "An interesting word for day 312 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary312 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary313",
+    "definition": "An interesting word for day 313 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary313 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary314",
+    "definition": "An interesting word for day 314 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary314 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary315",
+    "definition": "An interesting word for day 315 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary315 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary316",
+    "definition": "An interesting word for day 316 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary316 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary317",
+    "definition": "An interesting word for day 317 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary317 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary318",
+    "definition": "An interesting word for day 318 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary318 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary319",
+    "definition": "An interesting word for day 319 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary319 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary320",
+    "definition": "An interesting word for day 320 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary320 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary321",
+    "definition": "An interesting word for day 321 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary321 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary322",
+    "definition": "An interesting word for day 322 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary322 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary323",
+    "definition": "An interesting word for day 323 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary323 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary324",
+    "definition": "An interesting word for day 324 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary324 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary325",
+    "definition": "An interesting word for day 325 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary325 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary326",
+    "definition": "An interesting word for day 326 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary326 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary327",
+    "definition": "An interesting word for day 327 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary327 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary328",
+    "definition": "An interesting word for day 328 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary328 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary329",
+    "definition": "An interesting word for day 329 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary329 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary330",
+    "definition": "An interesting word for day 330 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary330 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary331",
+    "definition": "An interesting word for day 331 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary331 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary332",
+    "definition": "An interesting word for day 332 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary332 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary333",
+    "definition": "An interesting word for day 333 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary333 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary334",
+    "definition": "An interesting word for day 334 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary334 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary335",
+    "definition": "An interesting word for day 335 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary335 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary336",
+    "definition": "An interesting word for day 336 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary336 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary337",
+    "definition": "An interesting word for day 337 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary337 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary338",
+    "definition": "An interesting word for day 338 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary338 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary339",
+    "definition": "An interesting word for day 339 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary339 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary340",
+    "definition": "An interesting word for day 340 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary340 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary341",
+    "definition": "An interesting word for day 341 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary341 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary342",
+    "definition": "An interesting word for day 342 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary342 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary343",
+    "definition": "An interesting word for day 343 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary343 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary344",
+    "definition": "An interesting word for day 344 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary344 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary345",
+    "definition": "An interesting word for day 345 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary345 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary346",
+    "definition": "An interesting word for day 346 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary346 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary347",
+    "definition": "An interesting word for day 347 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary347 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary348",
+    "definition": "An interesting word for day 348 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary348 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary349",
+    "definition": "An interesting word for day 349 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary349 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary350",
+    "definition": "An interesting word for day 350 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary350 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary351",
+    "definition": "An interesting word for day 351 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary351 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary352",
+    "definition": "An interesting word for day 352 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary352 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary353",
+    "definition": "An interesting word for day 353 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary353 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary354",
+    "definition": "An interesting word for day 354 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary354 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary355",
+    "definition": "An interesting word for day 355 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary355 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary356",
+    "definition": "An interesting word for day 356 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary356 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary357",
+    "definition": "An interesting word for day 357 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary357 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary358",
+    "definition": "An interesting word for day 358 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary358 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary359",
+    "definition": "An interesting word for day 359 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary359 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary360",
+    "definition": "An interesting word for day 360 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary360 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary361",
+    "definition": "An interesting word for day 361 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary361 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary362",
+    "definition": "An interesting word for day 362 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary362 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary363",
+    "definition": "An interesting word for day 363 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary363 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary364",
+    "definition": "An interesting word for day 364 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary364 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  },
+  {
+    "word": "Vocabulary365",
+    "definition": "An interesting word for day 365 of the year.",
+    "partOfSpeech": "noun",
+    "pronunciation": "/vōˈkabyəˌlerē/",
+    "exampleSentence": "Vocabulary365 is the word of the day.",
+    "etymology": "From Latin vocabulum."
+  }
+]

@@ -104,7 +104,9 @@ class WordSelectionService {
   /// Uses modulo arithmetic to cycle through the words,
   /// creating a repeating pattern.
   int _calculateIndexForDate(DateTime date) {
-    final daysSinceStart = date.difference(_startDate).inDays;
+    final normalizedDate = _normalizeDate(date);
+    final normalizedStartDate = _normalizeDate(_startDate);
+    final daysSinceStart = normalizedDate.difference(normalizedStartDate).inDays;
     // Use modulo to cycle through the list, ensuring non-negative index
     return ((daysSinceStart % _words.length) + _words.length) % _words.length;
   }

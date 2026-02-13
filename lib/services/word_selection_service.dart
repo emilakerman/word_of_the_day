@@ -21,8 +21,11 @@ class WordSelectionService {
     required List<Word> words,
     DateTime? startDate,
   })  : _words = List.unmodifiable(words),
-        _startDate = startDate ?? DateTime(2024, 1, 1),
-        assert(words.isNotEmpty, 'Words list must not be empty');
+        _startDate = startDate ?? DateTime(2024, 1, 1) {
+    if (words.isEmpty) {
+      throw ArgumentError('Words list must not be empty');
+    }
+  }
 
   /// Gets the Word of the Day for today.
   ///

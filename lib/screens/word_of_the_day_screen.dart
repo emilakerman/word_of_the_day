@@ -53,7 +53,7 @@ class WordOfTheDayScreen extends StatelessWidget {
                     color: isFavorite ? Colors.red : null,
                   ),
                   onPressed: onFavorite,
-                  tooltip: 'Add to favorites',
+                  tooltip: isFavorite ? 'Remove from favorites' : 'Add to favorites',
                 ),
                 IconButton(
                   icon: const Icon(Icons.share_outlined),

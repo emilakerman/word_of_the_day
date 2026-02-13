@@ -12,6 +12,9 @@ class Word {
   /// An example sentence using the word
   final String? exampleSentence;
 
+  /// Optional URL for audio pronunciation playback
+  final String? audioUrl;
+
   /// The part of speech (noun, verb, adjective, etc.)
   final PartOfSpeech partOfSpeech;
 
@@ -27,6 +30,7 @@ class Word {
     required this.partOfSpeech,
     this.pronunciation,
     this.exampleSentence,
+    this.audioUrl,
     this.etymology,
     this.date,
   });
@@ -39,6 +43,7 @@ class Word {
       partOfSpeech: PartOfSpeech.fromString(json['partOfSpeech'] as String),
       pronunciation: json['pronunciation'] as String?,
       exampleSentence: json['exampleSentence'] as String?,
+      audioUrl: json['audioUrl'] as String?,
       etymology: json['etymology'] as String?,
       date: json['date'] != null ? DateTime.parse(json['date'] as String) : null,
     );
@@ -52,6 +57,7 @@ class Word {
       'partOfSpeech': partOfSpeech.value,
       'pronunciation': pronunciation,
       'exampleSentence': exampleSentence,
+      'audioUrl': audioUrl,
       'etymology': etymology,
       'date': date?.toIso8601String(),
     };
@@ -64,6 +70,7 @@ class Word {
     PartOfSpeech? partOfSpeech,
     String? pronunciation,
     String? exampleSentence,
+    String? audioUrl,
     String? etymology,
     DateTime? date,
   }) {
@@ -73,6 +80,7 @@ class Word {
       partOfSpeech: partOfSpeech ?? this.partOfSpeech,
       pronunciation: pronunciation ?? this.pronunciation,
       exampleSentence: exampleSentence ?? this.exampleSentence,
+      audioUrl: audioUrl ?? this.audioUrl,
       etymology: etymology ?? this.etymology,
       date: date ?? this.date,
     );
@@ -87,6 +95,7 @@ class Word {
         other.partOfSpeech == partOfSpeech &&
         other.pronunciation == pronunciation &&
         other.exampleSentence == exampleSentence &&
+        other.audioUrl == audioUrl &&
         other.etymology == etymology &&
         other.date == date;
   }
@@ -99,6 +108,7 @@ class Word {
       partOfSpeech,
       pronunciation,
       exampleSentence,
+      audioUrl,
       etymology,
       date,
     );

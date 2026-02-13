@@ -9,7 +9,7 @@ class WordSelectionService {
   /// The list of available words to select from
   final List<Word> _words;
 
-  /// Optional start date for the word cycle (defaults to epoch)
+  /// Optional start date for the word cycle. Defaults to January 1, 2024.
   final DateTime _startDate;
 
   /// Creates a WordSelectionService with the given list of words.

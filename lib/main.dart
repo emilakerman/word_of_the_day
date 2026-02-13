@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/word_of_the_day_screen.dart';
 import 'data/sample_words.dart';
+import 'services/word_selection_service.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,8 +12,11 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Use the first sample word with today's date for demonstration
-    final todaysWord = sampleWords.first.copyWith(date: DateTime.now());
+    // Create a word selection service with sample words
+    final wordService = WordSelectionService(words: sampleWords);
+
+    // Get today's word using the selection service
+    final todaysWord = wordService.getTodaysWord();
 
     return MaterialApp(
       title: 'Word of the Day',

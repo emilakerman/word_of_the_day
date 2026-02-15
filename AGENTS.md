@@ -46,5 +46,7 @@
 
 ### Linear
 
-- Always move a ticket from backlog to In Review in the Linear team / project associated with this github repo when code has been started being written.
+- When starting work on a ticket, move it from Backlog to **In Progress**.
+- **When a PR is marked ready for review**: Always move the corresponding Linear ticket to **In Review** status. This is required for the CI workflow to run. If you cannot move the ticket automatically, explicitly remind the user to move the Linear ticket to "In Review" before concluding.
+- The CI workflow will only run when the Linear ticket is in "In Review", "Done", or "Canceled" state.
 

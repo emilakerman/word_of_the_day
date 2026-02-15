@@ -104,20 +104,21 @@ jobs:
             flutter test
             flutter build apk --debug
             mkdir -p screenshots
-            flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart --device-id=emulator-5554 --screenshot=screenshots || true
-            ls -la screenshots/ || echo "No screenshots captured"
+            flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart --device-id=emulator-5554 --screenshot=screenshots
+            ls -la screenshots/
 
       - name: Upload screenshots
-        if: steps.check_linear.outcome == 'success'
+        id: upload_screenshots
+        if: steps.check_linear.outcome == 'success' && always()
         uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots/
-          if-no-files-found: warn
+          if-no-files-found: ignore
           retention-days: 30
 
       - name: Update PR description with screenshots
-        if: steps.check_linear.outcome == 'success' && steps.pr.outputs.pr_number != ''
+        if: steps.check_linear.outcome == 'success' && steps.pr.outputs.pr_number != '' && steps.upload_screenshots.outcome == 'success'
         uses: actions/github-script@v7
         with:
           script: |

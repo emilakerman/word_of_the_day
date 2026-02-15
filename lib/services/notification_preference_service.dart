@@ -54,8 +54,18 @@ class NotificationPreferenceService {
   Future<void> setNotificationTime(TimeOfDay time) async {
     try {
       final prefs = await _prefs;
-      await prefs.setInt(_keyNotificationHour, time.hour);
-      await prefs.setInt(_keyNotificationMinute, time.minute);
+      final hourSaved = await prefs.setInt(_keyNotificationHour, time.hour);
+      final minuteSaved = await prefs.setInt(_keyNotificationMinute, time.minute);
+      if (!hourSaved || !minuteSaved) {
+        // Attempt to clean up partial writes (best-effort)
+        if (hourSaved && !minuteSaved) {
+          await prefs.remove(_keyNotificationHour);
+        }
+        throw const NotificationPreferenceException(
+            'Failed to save notification time preference: storage returned false');
+      }
+    } on NotificationPreferenceException {
+      rethrow;
     } on Exception catch (e) {
       throw NotificationPreferenceException(
           'Failed to save notification time preference: $e');
@@ -78,7 +88,13 @@ class NotificationPreferenceService {
   Future<void> setNotificationsEnabled(bool enabled) async {
     try {
       final prefs = await _prefs;
-      await prefs.setBool(_keyNotificationsEnabled, enabled);
+      final success = await prefs.setBool(_keyNotificationsEnabled, enabled);
+      if (!success) {
+        throw const NotificationPreferenceException(
+            'Failed to save notifications enabled preference: storage returned false');
+      }
+    } on NotificationPreferenceException {
+      rethrow;
     } on Exception catch (e) {
       throw NotificationPreferenceException(
           'Failed to save notifications enabled preference: $e');

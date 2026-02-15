@@ -28,18 +28,22 @@ class NotificationPreferenceService {
   Future<SharedPreferences> get _prefs async =>
       _preferences ?? await SharedPreferences.getInstance();
 
-  /// Loads the saved notification time. Returns default (9:00 AM) if none saved
-  /// or on storage errors (graceful degradation).
+  /// Loads the saved notification time. Returns default (9:00 AM) if none saved,
+  /// values are out of range, or on storage errors (graceful degradation).
   Future<TimeOfDay> getNotificationTime() async {
     try {
       final prefs = await _prefs;
       final hour = prefs.getInt(_keyNotificationHour);
       final minute = prefs.getInt(_keyNotificationMinute);
       if (hour != null && minute != null) {
-        return TimeOfDay(hour: hour, minute: minute);
+        // Validate bounds to prevent AssertionError in TimeOfDay constructor
+        if (hour >= 0 && hour < 24 && minute >= 0 && minute < 60) {
+          return TimeOfDay(hour: hour, minute: minute);
+        }
       }
       return defaultTime;
-    } on Exception {
+    } catch (_) {
+      // Catch all errors including AssertionError for corrupted prefs
       return defaultTime;
     }
   }

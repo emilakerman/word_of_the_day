@@ -48,17 +48,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Future<void> _loadPreferences() async {
-    final time = await _notificationService.getNotificationTime();
-    final enabled = await _notificationService.getNotificationsEnabled();
-    final count = await _historyService.historyCount;
+    try {
+      final time = await _notificationService.getNotificationTime();
+      final enabled = await _notificationService.getNotificationsEnabled();
+      final count = await _historyService.historyCount;
 
-    if (mounted) {
-      setState(() {
-        _notificationTime = time;
-        _notificationsEnabled = enabled;
-        _historyCount = count;
-        _isLoading = false;
-      });
+      if (mounted) {
+        setState(() {
+          _notificationTime = time;
+          _notificationsEnabled = enabled;
+          _historyCount = count;
+          _isLoading = false;
+        });
+      }
+    } on Exception {
+      // Use sensible fallbacks if loading fails
+      if (mounted) {
+        setState(() {
+          _notificationTime = NotificationPreferenceService.defaultTime;
+          _notificationsEnabled = true;
+          _historyCount = 0;
+          _isLoading = false;
+        });
+      }
     }
   }
 
@@ -68,9 +80,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
       if (mounted) {
         setState(() => _notificationTime = time);
       }
-    } on NotificationPreferenceException catch (e) {
+    } on NotificationPreferenceException {
       if (mounted) {
-        _showErrorSnackBar('Failed to save notification time: $e');
+        _showErrorSnackBar('Could not save notification time. Please try again.');
       }
     }
   }
@@ -81,9 +93,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
       if (mounted) {
         setState(() => _notificationsEnabled = enabled);
       }
-    } on NotificationPreferenceException catch (e) {
+    } on NotificationPreferenceException {
       if (mounted) {
-        _showErrorSnackBar('Failed to save notification preference: $e');
+        _showErrorSnackBar('Could not save notification setting. Please try again.');
       }
     }
   }
@@ -119,9 +131,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
           setState(() => _historyCount = 0);
           _showSuccessSnackBar('History cleared successfully');
         }
-      } on WordHistoryException catch (e) {
+      } on WordHistoryException {
         if (mounted) {
-          _showErrorSnackBar('Failed to clear history: $e');
+          _showErrorSnackBar('Could not clear history. Please try again.');
         }
       }
     }
@@ -241,7 +253,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  String _formatTime(TimeOfDay time) {
+  String _formatTime(BuildContext context, TimeOfDay time) {
     final materialLocalizations = MaterialLocalizations.of(context);
     final use24HourFormat = MediaQuery.of(context).alwaysUse24HourFormat;
     return materialLocalizations.formatTimeOfDay(
@@ -304,7 +316,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   context,
                   icon: Icons.access_time_outlined,
                   title: 'Notification Time',
-                  subtitle: _formatTime(_notificationTime),
+                  subtitle: _formatTime(context, _notificationTime),
                   onTap: _notificationsEnabled ? _showTimePicker : null,
                   enabled: _notificationsEnabled,
                 ),

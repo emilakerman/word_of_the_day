@@ -6,9 +6,6 @@ class WordOfTheDayScreen extends StatelessWidget {
   /// The word to display
   final Word word;
 
-  /// Callback when the user selects a new theme (system / light / dark).
-  final void Function(ThemeMode mode)? onThemeChanged;
-
   /// Callback when the share button is tapped
   final VoidCallback? onShare;
 
@@ -24,7 +21,6 @@ class WordOfTheDayScreen extends StatelessWidget {
   const WordOfTheDayScreen({
     super.key,
     required this.word,
-    this.onThemeChanged,
     this.onShare,
     this.onFavorite,
     this.onSettings,

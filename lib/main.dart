@@ -21,7 +21,7 @@ class _MainAppState extends State<MainApp> {
   final WordSelectionService _wordService = WordSelectionService(words: sampleWords);
   ThemeMode _themeMode = ThemeMode.system;
 
-  /// App version from pubspec.yaml
+  /// App version string (keep in sync with pubspec.yaml manually)
   static const String _appVersion = '0.1.0';
 
   @override
@@ -79,7 +79,6 @@ class _MainAppState extends State<MainApp> {
       home: Builder(
         builder: (context) => WordOfTheDayScreen(
           word: todaysWord,
-          onThemeChanged: _onThemeChanged,
           onShare: () {
             // Share functionality to be implemented
           },

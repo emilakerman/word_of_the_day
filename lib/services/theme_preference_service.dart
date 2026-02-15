@@ -3,6 +3,16 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 const String _keyThemeMode = 'theme_mode';
 
+/// Thrown when theme preference storage fails.
+class ThemePreferenceException implements Exception {
+  final String message;
+
+  const ThemePreferenceException(this.message);
+
+  @override
+  String toString() => 'ThemePreferenceException: $message';
+}
+
 /// Persists and loads the user's theme preference (system, light, dark).
 class ThemePreferenceService {
   ThemePreferenceService({SharedPreferences? preferences})
@@ -35,16 +45,27 @@ class ThemePreferenceService {
     }
   }
 
-  /// Loads the saved theme mode. Returns [ThemeMode.system] if none saved.
+  /// Loads the saved theme mode. Returns [ThemeMode.system] if none saved
+  /// or on storage errors (graceful degradation).
   Future<ThemeMode> getThemeMode() async {
-    final prefs = await _prefs;
-    final value = prefs.getString(_keyThemeMode);
-    return value != null ? _stringToMode(value) : ThemeMode.system;
+    try {
+      final prefs = await _prefs;
+      final value = prefs.getString(_keyThemeMode);
+      return value != null ? _stringToMode(value) : ThemeMode.system;
+    } on Exception {
+      return ThemeMode.system;
+    }
   }
 
   /// Saves the theme mode and persists across app restarts.
+  ///
+  /// Throws [ThemePreferenceException] if storage fails.
   Future<void> setThemeMode(ThemeMode mode) async {
-    final prefs = await _prefs;
-    await prefs.setString(_keyThemeMode, _modeToString(mode));
+    try {
+      final prefs = await _prefs;
+      await prefs.setString(_keyThemeMode, _modeToString(mode));
+    } on Exception catch (e) {
+      throw ThemePreferenceException('Failed to save theme preference: $e');
+    }
   }
 }

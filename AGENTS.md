@@ -42,3 +42,7 @@
 
 - When a PR is ready for review and its linked Linear ticket is completed, the workflow **PR ready – Linear + Android** runs the branch on an Android emulator and runs tests. Link the PR to Linear by including the issue identifier (e.g. `WORD-123`) in the PR title, body, or branch name. The repo must have `LINEAR_API_KEY` in Secrets.
 
+### Linear
+
+- Always move a ticket from backlog to In Review in the Linear team / project associated with this github repo when code has been started being written.
+

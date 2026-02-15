@@ -45,4 +45,5 @@
 ### Linear
 
 - Always move a ticket from backlog to In Review in the Linear team / project associated with this github repo when code has been started being written.
+- Always move a linear ticket to in review when the PR i done and is marked as ready for review.
 

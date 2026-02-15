@@ -12,19 +12,20 @@ import 'package:word_of_the_day/main.dart' as app;
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
-  // Track if surface has been converted (Android only - can only be done once)
-  bool surfaceConverted = false;
-
   group('Screenshot Tests', () {
+    // Convert surface once at the start (Android only)
+    setUpAll(() async {
+      if (Platform.isAndroid) {
+        await binding.convertFlutterSurfaceToImage();
+      }
+    });
+
     testWidgets('capture main screen screenshot', (tester) async {
       app.main();
       await tester.pumpAndSettle();
       await Future<void>.delayed(const Duration(seconds: 1));
 
-      surfaceConverted = await takeScreenshot(
-        binding, tester, 'main_screen',
-        surfaceConverted: surfaceConverted,
-      );
+      await takeScreenshot(binding, tester, 'main_screen');
     });
 
     testWidgets('capture settings screen screenshot', (tester) async {
@@ -37,10 +38,7 @@ void main() {
       await tester.pumpAndSettle();
       await Future<void>.delayed(const Duration(milliseconds: 500));
 
-      surfaceConverted = await takeScreenshot(
-        binding, tester, 'settings_screen',
-        surfaceConverted: surfaceConverted,
-      );
+      await takeScreenshot(binding, tester, 'settings_screen');
     });
 
     testWidgets('capture theme picker screenshot', (tester) async {
@@ -57,10 +55,7 @@ void main() {
       await tester.pumpAndSettle();
       await Future<void>.delayed(const Duration(milliseconds: 500));
 
-      surfaceConverted = await takeScreenshot(
-        binding, tester, 'theme_picker',
-        surfaceConverted: surfaceConverted,
-      );
+      await takeScreenshot(binding, tester, 'theme_picker');
     });
 
     testWidgets('capture dark mode screenshot', (tester) async {
@@ -85,10 +80,7 @@ void main() {
       await Future<void>.delayed(const Duration(milliseconds: 500));
 
       // Screenshot settings in dark mode
-      surfaceConverted = await takeScreenshot(
-        binding, tester, 'settings_dark_mode',
-        surfaceConverted: surfaceConverted,
-      );
+      await takeScreenshot(binding, tester, 'settings_dark_mode');
 
       // Navigate back to main screen
       final navigator = Navigator.of(tester.element(find.byType(Scaffold).last));
@@ -97,10 +89,7 @@ void main() {
       await Future<void>.delayed(const Duration(milliseconds: 500));
 
       // Screenshot main screen in dark mode
-      surfaceConverted = await takeScreenshot(
-        binding, tester, 'main_screen_dark_mode',
-        surfaceConverted: surfaceConverted,
-      );
+      await takeScreenshot(binding, tester, 'main_screen_dark_mode');
     });
   });
 }
@@ -108,28 +97,16 @@ void main() {
 /// Takes a screenshot using the integration test binding.
 /// Screenshots are captured by the binding and saved by the test driver.
 ///
-/// [surfaceConverted] is used to track if the Android surface has already been
-/// converted (it can only be done once per test session).
-Future<bool> takeScreenshot(
+/// Note: On Android, [convertFlutterSurfaceToImage] must be called once
+/// before this function (typically in setUpAll).
+Future<void> takeScreenshot(
   IntegrationTestWidgetsFlutterBinding binding,
   WidgetTester tester,
-  String name, {
-  required bool surfaceConverted,
-}) async {
+  String name,
+) async {
   await tester.pumpAndSettle();
-
-  // On Android, convert the Flutter surface to an image for screenshot capture
-  // This can only be done once per test session
-  if (Platform.isAndroid && !surfaceConverted) {
-    await binding.convertFlutterSurfaceToImage();
-    await tester.pumpAndSettle();
-    surfaceConverted = true;
-  }
-
   await binding.takeScreenshot(name);
 
   // ignore: avoid_print
   print('Screenshot captured: $name');
-  
-  return surfaceConverted;
 }

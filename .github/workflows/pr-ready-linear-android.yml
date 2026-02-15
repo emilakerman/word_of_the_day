@@ -1,0 +1,71 @@
+# When a PR is ready for review and its linked Linear issue is completed,
+# run the app on an Android emulator and run tests.
+# Add LINEAR_API_KEY to repo Secrets (Settings → Secrets and variables → Actions). Link the PR to Linear by including
+# the issue identifier (e.g. WORD-123) in the PR title, body, or branch name.
+
+name: PR ready – Linear + Android
+
+on:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  run-on-android:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Get PR info
+        id: pr
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const text = [pr.title, pr.body || '', pr.head.ref].join(' ');
+            // Match Linear-style identifiers: TEAM-123, WORD-42
+            const match = text.match(/([A-Za-z]+-\d+)/);
+            core.setOutput('issue_id', match ? match[1] : '');
+            core.setOutput('branch', pr.head.ref);
+
+      - name: Check Linear issue is completed
+        id: check_linear
+        if: steps.pr.outputs.issue_id != ''
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+        run: |
+          chmod +x .github/scripts/check-linear-issue.sh
+          .github/scripts/check-linear-issue.sh "${{ steps.pr.outputs.issue_id }}"
+
+      - name: Skip – no Linear issue in PR
+        if: steps.pr.outputs.issue_id == ''
+        run: |
+          echo "Skipping: no Linear issue ID in PR title, body, or branch (e.g. WORD-123)."
+
+      - name: Set up Flutter
+        if: steps.check_linear.outcome == 'success'
+        uses: subosito/flutter-action@v1
+        with:
+          flutter-version: "3.24.x"
+          channel: stable
+          cache: true
+
+      - name: Enable KVM (Android emulator)
+        if: steps.check_linear.outcome == 'success'
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run tests and app on Android emulator
+        if: steps.check_linear.outcome == 'success'
+        uses: ReactiveCircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: default
+          arch: x86_64
+          profile: pixel_7_pro
+          script: |
+            flutter pub get
+            flutter test
+            flutter install

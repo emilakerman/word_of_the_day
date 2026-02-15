@@ -1,0 +1,43 @@
+---
+description: Rules for Cursor agents working on Word of the Day (Flutter/Dart)
+alwaysApply: true
+---
+
+# Word of the Day – Agent Rules
+
+## Project overview
+
+- **Stack**: Flutter (Dart SDK >=3.3), Material 3, `shared_preferences`, `http`.
+- **App**: Single main screen showing a “word of the day” with share and favorite (placeholders).
+- **Assets**: Word data lives under `assets/data/`; app icon/splash under `assets/icon/`.
+
+## Code structure
+
+- **Entry**: `lib/main.dart` – sets up `MaterialApp`, theme (indigo seed, light/dark), and `WordOfTheDayScreen`.
+- **Screens**: `lib/screens/` – UI screens (e.g. `WordOfTheDayScreen`).
+- **Data**: `lib/data/` – sample/curated word data and types.
+- **Services**: `lib/services/` – e.g. `WordSelectionService` for selecting today’s word.
+- **Tools**: `tool/` – CLI/scripts (e.g. `generate_curated_words.dart`) for generating or processing data; run with `dart run`, not as app code.
+
+## Conventions for agents
+
+1. **Dart/Flutter**
+   - Prefer `const` constructors and `final` where possible.
+   - Use existing `flutter_lints`; avoid disabling lints without a short comment.
+   - Keep widget trees readable; extract sub-widgets or methods when they get long.
+
+2. **Theming**
+   - Use the app’s existing `ThemeData` / `ColorScheme.fromSeed(seedColor: 0xFF6366F1)`; don’t introduce new global colors unless the user asks.
+
+3. **Data and services**
+   - Word content should flow from `lib/data/` or `assets/data/` through services (e.g. `WordSelectionService`); don’t hardcode large word lists in UI code.
+   - Changes to word data format should be reflected in both app code and any `tool/` scripts that produce that data.
+
+4. **Scope**
+   - When adding features, match the current structure (screens, services, data) and avoid unnecessary new dependencies in `pubspec.yaml` unless the user requests them.
+
+5. **Platform**
+   - iOS and Android are in use; if you add native or plugin behavior, consider both platforms.
+
+6. **Pull requests**
+   - When creating a PR and marking it ready for review, add **Copilot** as a reviewer (e.g. in the GitHub PR sidebar under Reviewers). If using `gh pr create`, open the PR in the browser and add Copilot, or remind the user.

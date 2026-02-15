@@ -15,8 +15,20 @@ class WordOfTheDayScreen extends StatelessWidget {
   /// Callback when the settings button is tapped
   final VoidCallback? onSettings;
 
+  /// Callback when the history button is tapped
+  final VoidCallback? onHistory;
+
+  /// Callback when the audio playback button is tapped
+  final VoidCallback? onPlayAudio;
+
   /// Whether the word is marked as favorite
   final bool isFavorite;
+
+  /// Whether audio is currently playing
+  final bool isAudioPlaying;
+
+  /// Whether audio is loading
+  final bool isAudioLoading;
 
   const WordOfTheDayScreen({
     super.key,
@@ -24,7 +36,11 @@ class WordOfTheDayScreen extends StatelessWidget {
     this.onShare,
     this.onFavorite,
     this.onSettings,
+    this.onHistory,
+    this.onPlayAudio,
     this.isFavorite = false,
+    this.isAudioPlaying = false,
+    this.isAudioLoading = false,
   });
 
   @override
@@ -63,6 +79,11 @@ class WordOfTheDayScreen extends StatelessWidget {
                   icon: const Icon(Icons.share_outlined),
                   onPressed: onShare,
                   tooltip: 'Share',
+                ),
+                IconButton(
+                  icon: const Icon(Icons.history_outlined),
+                  onPressed: onHistory,
+                  tooltip: 'Word History',
                 ),
                 IconButton(
                   icon: const Icon(Icons.settings_outlined),
@@ -193,23 +214,47 @@ class WordOfTheDayScreen extends StatelessWidget {
             const SizedBox(height: 8),
             Row(
               children: [
-                Icon(
-                  Icons.volume_up_outlined,
-                  color: Colors.white.withOpacity(0.8),
-                  size: 20,
-                ),
+                _buildAudioButton(),
                 const SizedBox(width: 8),
-                Text(
-                  word.pronunciation!,
-                  style: theme.textTheme.bodyLarge?.copyWith(
-                    color: Colors.white.withOpacity(0.9),
-                    fontStyle: FontStyle.italic,
+                Expanded(
+                  child: Text(
+                    word.pronunciation!,
+                    style: theme.textTheme.bodyLarge?.copyWith(
+                      color: Colors.white.withOpacity(0.9),
+                      fontStyle: FontStyle.italic,
+                    ),
                   ),
                 ),
               ],
             ),
           ],
         ],
+      ),
+    );
+  }
+
+  Widget _buildAudioButton() {
+    final hasAudio = word.audioUrl != null && word.audioUrl!.isNotEmpty;
+
+    if (isAudioLoading) {
+      return const SizedBox(
+        width: 20,
+        height: 20,
+        child: CircularProgressIndicator(
+          strokeWidth: 2,
+          color: Colors.white,
+        ),
+      );
+    }
+
+    return GestureDetector(
+      onTap: hasAudio ? onPlayAudio : null,
+      child: Icon(
+        isAudioPlaying ? Icons.stop_circle_outlined : Icons.volume_up_outlined,
+        color: hasAudio
+            ? Colors.white.withOpacity(0.9)
+            : Colors.white.withOpacity(0.4),
+        size: 24,
       ),
     );
   }

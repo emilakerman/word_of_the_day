@@ -1,5 +1,5 @@
 # When a PR is ready for review and its linked Linear issue is in review or completed,
-# run the app on an Android emulator and run tests.
+# run the app on an Android emulator, run tests, capture screenshots, and update PR description.
 # Add LINEAR_API_KEY to repo Secrets (Settings → Secrets and variables → Actions). Link the PR to Linear by including
 # the issue identifier (e.g. WORD-123) in the PR title, body, or branch name.
 
@@ -8,6 +8,10 @@ name: PR ready – Linear + Android
 on:
   pull_request:
     types: [opened, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   run-on-android:
@@ -27,6 +31,7 @@ jobs:
             const match = text.match(/([A-Za-z]+-\d+)/);
             core.setOutput('issue_id', match ? match[1] : '');
             core.setOutput('branch', pr.head.ref);
+            core.setOutput('pr_number', pr.number);
 
       - name: Check Linear issue is completed
         id: check_linear
@@ -44,7 +49,7 @@ jobs:
 
       - name: Set up Flutter
         if: steps.check_linear.outcome == 'success'
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: "3.24.x"
           channel: stable
@@ -57,7 +62,8 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
-      - name: Run tests and app on Android emulator
+      - name: Run tests and integration tests on Android emulator
+        id: android_tests
         if: steps.check_linear.outcome == 'success'
         uses: ReactiveCircus/android-emulator-runner@v2
         with:
@@ -69,4 +75,75 @@ jobs:
             flutter pub get
             flutter test
             flutter build apk --debug
-            flutter install --debug
+            # Create screenshots directory
+            mkdir -p screenshots
+            # Run integration tests to capture screenshots
+            flutter test integration_test/screenshot_test.dart --device-id emulator-5554 || true
+            # List captured screenshots
+            ls -la screenshots/ || echo "No screenshots directory"
+
+      - name: Upload screenshots
+        if: steps.check_linear.outcome == 'success'
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Update PR description with screenshots
+        if: steps.check_linear.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            
+            const prNumber = ${{ steps.pr.outputs.pr_number }};
+            const runId = context.runId;
+            const repo = context.repo;
+            
+            // Get current PR description
+            const { data: pr } = await github.rest.pulls.get({
+              owner: repo.owner,
+              repo: repo.repo,
+              pull_number: prNumber,
+            });
+            
+            let body = pr.body || '';
+            
+            // Create screenshots section
+            const screenshotSection = `
+## 📱 Screenshots (CI Run #${runId})
+
+Screenshots captured from Android emulator during CI:
+
+| Main Screen | Settings Screen |
+|:-----------:|:---------------:|
+| ![Main Screen](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}/artifacts) | ![Settings Screen](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}/artifacts) |
+
+> **Note:** Download the \`screenshots\` artifact from [CI Run #${runId}](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}) to view all captured screenshots.
+>
+> Screenshots include: main_screen, settings_screen, theme_picker, settings_dark_mode, main_screen_dark_mode
+`;
+            
+            // Check if screenshots section already exists
+            const screenshotMarker = '## 📱 Screenshots';
+            if (body.includes(screenshotMarker)) {
+              // Replace existing section
+              const regex = /## 📱 Screenshots[\s\S]*?(?=\n## |$)/;
+              body = body.replace(regex, screenshotSection.trim());
+            } else {
+              // Append new section
+              body = body + '\n\n' + screenshotSection;
+            }
+            
+            // Update PR description
+            await github.rest.pulls.update({
+              owner: repo.owner,
+              repo: repo.repo,
+              pull_number: prNumber,
+              body: body,
+            });
+            
+            console.log('PR description updated with screenshots section');

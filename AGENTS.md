@@ -41,8 +41,15 @@
 ### Pull requests and CI
 
 - When a PR is ready for review and its linked Linear ticket is **In Review** or completed, the workflow **PR ready – Linear + Android** runs the branch on an Android emulator and runs tests. Link the PR to Linear by including the issue identifier (e.g. `WORD-123`) in the PR title, body, or branch name. The repo must have `LINEAR_API_KEY` in Secrets.
+- **Screenshot testing**: The CI workflow runs integration tests that capture screenshots of the app (main screen, settings screen, theme picker, dark mode). Screenshots are uploaded as artifacts and the PR description is automatically updated with a link to download them.
 - **When work is complete**: Before concluding a task, always check if a PR exists for the branch (e.g. `gh pr list --head <branch-name>`). If a draft PR exists and all work is complete, mark it as ready for review using `gh pr ready <pr-number>`. Never leave a PR in draft state when the work is finished.
 - When marking a PR ready for review, add **Copilot** as a reviewer via the GitHub PR sidebar (or remind the user to do so if automated addition fails).
+
+### Integration tests
+
+- Integration tests live in `integration_test/` and can be run locally with `flutter test integration_test/screenshot_test.dart`.
+- The test driver is at `test_driver/integration_test.dart`.
+- Screenshots are saved to the `screenshots/` directory (gitignored).
 
 ### Linear
 

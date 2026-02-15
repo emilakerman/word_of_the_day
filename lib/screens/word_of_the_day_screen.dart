@@ -287,7 +287,7 @@ class WordOfTheDayScreen extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: colorScheme.surfaceVariant,
+          color: colorScheme.surfaceContainerHighest,
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
             color: colorScheme.outline.withOpacity(0.2),

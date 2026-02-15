@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/notification_preference_service.dart';
 import '../services/word_history_service.dart';
-import '../services/theme_preference_service.dart';
 
 /// Settings screen for user preferences.
 ///

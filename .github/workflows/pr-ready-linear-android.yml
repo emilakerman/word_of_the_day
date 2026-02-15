@@ -1,5 +1,5 @@
-# When a PR is ready for review and its linked Linear issue is completed,
-# run the app on an Android emulator and run tests.
+# When a PR is ready for review and its linked Linear issue is in review or completed,
+# run the app on an Android emulator, run tests, capture screenshots, and update PR description.
 # Add LINEAR_API_KEY to repo Secrets (Settings → Secrets and variables → Actions). Link the PR to Linear by including
 # the issue identifier (e.g. WORD-123) in the PR title, body, or branch name.
 
@@ -7,7 +7,17 @@ name: PR ready – Linear + Android
 
 on:
   pull_request:
-    types: [opened, ready_for_review]
+    types: [opened, ready_for_review, synchronize]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to run tests for'
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   run-on-android:
@@ -21,12 +31,35 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const pr = context.payload.pull_request;
+            let pr = context.payload.pull_request;
+            
+            // If triggered via workflow_dispatch or push, try to find PR for current branch
+            if (!pr) {
+              const branch = context.ref.replace('refs/heads/', '');
+              const { data: prs } = await github.rest.pulls.list({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                head: `${context.repo.owner}:${branch}`,
+                state: 'open'
+              });
+              if (prs.length > 0) {
+                pr = prs[0];
+              }
+            }
+            
+            if (!pr) {
+              core.setOutput('issue_id', '');
+              core.setOutput('branch', context.ref.replace('refs/heads/', ''));
+              core.setOutput('pr_number', '');
+              return;
+            }
+            
             const text = [pr.title, pr.body || '', pr.head.ref].join(' ');
             // Match Linear-style identifiers: TEAM-123, WORD-42
             const match = text.match(/([A-Za-z]+-\d+)/);
             core.setOutput('issue_id', match ? match[1] : '');
             core.setOutput('branch', pr.head.ref);
+            core.setOutput('pr_number', pr.number);
 
       - name: Check Linear issue is completed
         id: check_linear
@@ -44,7 +77,7 @@ jobs:
 
       - name: Set up Flutter
         if: steps.check_linear.outcome == 'success'
-        uses: subosito/flutter-action@v1
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: "3.24.x"
           channel: stable
@@ -57,7 +90,8 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
-      - name: Run tests and app on Android emulator
+      - name: Run tests and integration tests on Android emulator
+        id: android_tests
         if: steps.check_linear.outcome == 'success'
         uses: ReactiveCircus/android-emulator-runner@v2
         with:
@@ -69,4 +103,62 @@ jobs:
             flutter pub get
             flutter test
             flutter build apk --debug
-            flutter install --debug
+            mkdir -p screenshots
+            flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart --device-id=emulator-5554 --screenshot=screenshots
+            ls -la screenshots/
+
+      - name: Upload screenshots
+        id: upload_screenshots
+        if: steps.check_linear.outcome == 'success' && always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: screenshots/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Update PR description with screenshots
+        if: steps.check_linear.outcome == 'success' && steps.pr.outputs.pr_number != '' && steps.upload_screenshots.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = ${{ steps.pr.outputs.pr_number }};
+            const runId = context.runId;
+            const repo = context.repo;
+            
+            const { data: pr } = await github.rest.pulls.get({
+              owner: repo.owner,
+              repo: repo.repo,
+              pull_number: prNumber,
+            });
+            
+            let body = pr.body || '';
+            
+            const screenshotSection = [
+              '',
+              '## 📱 Screenshots (CI Run #' + runId + ')',
+              '',
+              'Screenshots captured from Android emulator during CI.',
+              '',
+              '**Download:** [screenshots artifact](https://github.com/' + repo.owner + '/' + repo.repo + '/actions/runs/' + runId + ')',
+              '',
+              'Screenshots include: main_screen, settings_screen, theme_picker, settings_dark_mode, main_screen_dark_mode',
+              ''
+            ].join('\n');
+            
+            const screenshotMarker = '## 📱 Screenshots';
+            if (body.includes(screenshotMarker)) {
+              const regex = /## 📱 Screenshots[\s\S]*?(?=\n## |$)/;
+              body = body.replace(regex, screenshotSection.trim());
+            } else {
+              body = body + '\n' + screenshotSection;
+            }
+            
+            await github.rest.pulls.update({
+              owner: repo.owner,
+              repo: repo.repo,
+              pull_number: prNumber,
+              body: body,
+            });
+            
+            console.log('PR description updated with screenshots section');

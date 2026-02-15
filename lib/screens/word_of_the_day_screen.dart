@@ -6,6 +6,9 @@ class WordOfTheDayScreen extends StatelessWidget {
   /// The word to display
   final Word word;
 
+  /// Callback when the user selects a new theme (system / light / dark).
+  final void Function(ThemeMode mode)? onThemeChanged;
+
   /// Callback when the share button is tapped
   final VoidCallback? onShare;
 
@@ -18,6 +21,7 @@ class WordOfTheDayScreen extends StatelessWidget {
   const WordOfTheDayScreen({
     super.key,
     required this.word,
+    this.onThemeChanged,
     this.onShare,
     this.onFavorite,
     this.isFavorite = false,
@@ -47,6 +51,13 @@ class WordOfTheDayScreen extends StatelessWidget {
               ),
               centerTitle: true,
               actions: [
+                IconButton(
+                  icon: const Icon(Icons.brightness_6_outlined),
+                  onPressed: onThemeChanged != null
+                      ? () => _showThemePicker(context)
+                      : null,
+                  tooltip: 'Theme',
+                ),
                 IconButton(
                   icon: Icon(
                     isFavorite ? Icons.favorite : Icons.favorite_border,
@@ -303,6 +314,60 @@ class WordOfTheDayScreen extends StatelessWidget {
     );
   }
 
+  void _showThemePicker(BuildContext context) {
+    final theme = Theme.of(context);
+    showModalBottomSheet<void>(
+      context: context,
+      builder: (BuildContext context) {
+        return SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  child: Text(
+                    'Theme',
+                    style: theme.textTheme.titleMedium?.copyWith(
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 8),
+                _ThemeOption(
+                  label: 'System default',
+                  icon: Icons.phone_android_outlined,
+                  onTap: () {
+                    Navigator.pop(context);
+                    onThemeChanged?.call(ThemeMode.system);
+                  },
+                ),
+                _ThemeOption(
+                  label: 'Light',
+                  icon: Icons.light_mode_outlined,
+                  onTap: () {
+                    Navigator.pop(context);
+                    onThemeChanged?.call(ThemeMode.light);
+                  },
+                ),
+                _ThemeOption(
+                  label: 'Dark',
+                  icon: Icons.dark_mode_outlined,
+                  onTap: () {
+                    Navigator.pop(context);
+                    onThemeChanged?.call(ThemeMode.dark);
+                  },
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
   String _formatDate(DateTime date) {
     const months = [
       'January',
@@ -319,5 +384,27 @@ class WordOfTheDayScreen extends StatelessWidget {
       'December'
     ];
     return '${months[date.month - 1]} ${date.day}, ${date.year}';
+  }
+}
+
+class _ThemeOption extends StatelessWidget {
+  const _ThemeOption({
+    required this.label,
+    required this.icon,
+    required this.onTap,
+  });
+
+  final String label;
+  final IconData icon;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return ListTile(
+      leading: Icon(icon, color: theme.colorScheme.primary),
+      title: Text(label),
+      onTap: onTap,
+    );
   }
 }

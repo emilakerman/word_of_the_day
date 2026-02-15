@@ -8,26 +8,15 @@ import 'package:word_of_the_day/main.dart' as app;
 /// Integration tests that capture screenshots of the app.
 ///
 /// Run with:
-/// flutter test integration_test/screenshot_test.dart
-///
-/// Or:
 /// flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart
 void main() {
-  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized()
-      as IntegrationTestWidgetsFlutterBinding;
-
-  // 🔥 Convert surface only once (Android only)
-  setUpAll(() async {
-    if (Platform.isAndroid) {
-      await binding.convertFlutterSurfaceToImage();
-    }
-  });
+  final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   group('Screenshot Tests', () {
     testWidgets('capture main screen screenshot', (tester) async {
       app.main();
       await tester.pumpAndSettle();
-      await tester.pump(const Duration(seconds: 1));
+      await Future<void>.delayed(const Duration(seconds: 1));
 
       await takeScreenshot(binding, tester, 'main_screen');
     });
@@ -35,14 +24,12 @@ void main() {
     testWidgets('capture settings screen screenshot', (tester) async {
       app.main();
       await tester.pumpAndSettle();
-      await tester.pump(const Duration(seconds: 1));
 
       final settingsButton = find.byIcon(Icons.settings_outlined);
       expect(settingsButton, findsOneWidget);
       await tester.tap(settingsButton);
       await tester.pumpAndSettle();
-
-      await tester.pump(const Duration(seconds: 1));
+      await Future<void>.delayed(const Duration(milliseconds: 500));
 
       await takeScreenshot(binding, tester, 'settings_screen');
     });
@@ -59,8 +46,7 @@ void main() {
       expect(themeTile, findsOneWidget);
       await tester.tap(themeTile);
       await tester.pumpAndSettle();
-
-      await tester.pump(const Duration(milliseconds: 500));
+      await Future<void>.delayed(const Duration(milliseconds: 500));
 
       await takeScreenshot(binding, tester, 'theme_picker');
     });
@@ -84,24 +70,16 @@ void main() {
       expect(darkOption, findsOneWidget);
       await tester.tap(darkOption);
       await tester.pumpAndSettle();
-
-      await tester.pump(const Duration(milliseconds: 500));
+      await Future<void>.delayed(const Duration(milliseconds: 500));
 
       // Screenshot settings in dark mode
       await takeScreenshot(binding, tester, 'settings_dark_mode');
 
-      // Navigate back
-      final backButton = find.byType(BackButton);
-      if (backButton.evaluate().isNotEmpty) {
-        await tester.tap(backButton);
-      } else {
-        final appBarBackButton = find.byIcon(Icons.arrow_back);
-        if (appBarBackButton.evaluate().isNotEmpty) {
-          await tester.tap(appBarBackButton);
-        }
-      }
-
+      // Navigate back to main screen
+      final navigator = Navigator.of(tester.element(find.byType(Scaffold).last));
+      navigator.pop();
       await tester.pumpAndSettle();
+      await Future<void>.delayed(const Duration(milliseconds: 500));
 
       // Screenshot main screen in dark mode
       await takeScreenshot(binding, tester, 'main_screen_dark_mode');
@@ -110,13 +88,19 @@ void main() {
 }
 
 /// Takes a screenshot using the integration test binding.
-/// Screenshots are captured by the binding and can be extracted by the test driver.
+/// Screenshots are captured by the binding and saved by the test driver.
 Future<void> takeScreenshot(
   IntegrationTestWidgetsFlutterBinding binding,
   WidgetTester tester,
   String name,
 ) async {
   await tester.pumpAndSettle();
+
+  // On Android, convert the Flutter surface to an image for screenshot capture
+  if (Platform.isAndroid) {
+    await binding.convertFlutterSurfaceToImage();
+    await tester.pumpAndSettle();
+  }
 
   await binding.takeScreenshot(name);
 

@@ -242,10 +242,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   String _formatTime(TimeOfDay time) {
-    final hour = time.hourOfPeriod == 0 ? 12 : time.hourOfPeriod;
-    final minute = time.minute.toString().padLeft(2, '0');
-    final period = time.period == DayPeriod.am ? 'AM' : 'PM';
-    return '$hour:$minute $period';
+    final materialLocalizations = MaterialLocalizations.of(context);
+    final use24HourFormat = MediaQuery.of(context).alwaysUse24HourFormat;
+    return materialLocalizations.formatTimeOfDay(
+      time,
+      alwaysUse24HourFormat: use24HourFormat,
+    );
   }
 
   String _getThemeModeLabel(ThemeMode mode) {

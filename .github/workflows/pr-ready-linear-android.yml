@@ -1,4 +1,4 @@
-# When a PR is ready for review and its linked Linear issue is completed,
+# When a PR is ready for review and its linked Linear issue is in review or completed,
 # run the app on an Android emulator and run tests.
 # Add LINEAR_API_KEY to repo Secrets (Settings → Secrets and variables → Actions). Link the PR to Linear by including
 # the issue identifier (e.g. WORD-123) in the PR title, body, or branch name.

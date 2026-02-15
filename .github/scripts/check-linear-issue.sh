@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Usage: check-linear-issue.sh <issue_identifier> <linear_api_key>
-# Exits 0 if the issue exists and its state is "Done" or "Canceled"; 1 otherwise.
+# Exits 0 if the issue exists and its state is "In Review", "Done", or "Canceled"; 1 otherwise.
 # Issue identifier: e.g. WORD-123 (from PR title, body, or branch).
 # Linear API: https://developers.linear.app/docs/graphql/working-with-the-graphql-api
 
@@ -36,12 +36,12 @@ if [ -z "$STATE" ]; then
 fi
 
 case "$STATE" in
-  Done|Canceled)
+  "In Review"|Done|Canceled)
     echo "Linear issue $IDENTIFIER is $STATE — proceeding."
     exit 0
     ;;
   *)
-    echo "Linear issue $IDENTIFIER is not completed (state: $STATE). Skipping run."
+    echo "Linear issue $IDENTIFIER is not in review or completed (state: $STATE). Skipping run."
     exit 1
     ;;
 esac

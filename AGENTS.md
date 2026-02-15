@@ -40,10 +40,13 @@
 
 ### Pull requests and CI
 
-- When a PR is ready for review and its linked Linear ticket is completed, the workflow **PR ready – Linear + Android** runs the branch on an Android emulator and runs tests. Link the PR to Linear by including the issue identifier (e.g. `WORD-123`) in the PR title, body, or branch name. The repo must have `LINEAR_API_KEY` in Secrets.
+- When a PR is ready for review and its linked Linear ticket is **In Review** or completed, the workflow **PR ready – Linear + Android** runs the branch on an Android emulator and runs tests. Link the PR to Linear by including the issue identifier (e.g. `WORD-123`) in the PR title, body, or branch name. The repo must have `LINEAR_API_KEY` in Secrets.
+- **When work is complete**: Before concluding a task, always check if a PR exists for the branch (e.g. `gh pr list --head <branch-name>`). If a draft PR exists and all work is complete, mark it as ready for review using `gh pr ready <pr-number>`. Never leave a PR in draft state when the work is finished.
+- When marking a PR ready for review, add **Copilot** as a reviewer via the GitHub PR sidebar (or remind the user to do so if automated addition fails).
 
 ### Linear
 
-- Always move a ticket from backlog to In Review in the Linear team / project associated with this github repo when code has been started being written.
-- Always move a linear ticket to in review when the PR i done and is marked as ready for review.
+- When starting work on a ticket, move it from Backlog to **In Progress**.
+- **When a PR is marked ready for review**: Always move the corresponding Linear ticket to **In Review** status. This is required for the CI workflow to run. If you cannot move the ticket automatically, explicitly remind the user to move the Linear ticket to "In Review" before concluding.
+- The CI workflow will only run when the Linear ticket is in "In Review", "Done", or "Canceled" state.
 

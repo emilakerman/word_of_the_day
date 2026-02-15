@@ -101,3 +101,11 @@ flutter drive --driver=test_driver/integration_test.dart --target=integration_te
 - **When a PR is marked ready for review**: Always move the corresponding Linear ticket to **In Review** status. This is required for the CI workflow to run. If you cannot move the ticket automatically, explicitly remind the user to move the Linear ticket to "In Review" before concluding.
 - The CI workflow will only run when the Linear ticket is in "In Review", "Done", or "Canceled" state.
 
+**Epics vs Subtickets:**
+
+- **NEVER link a PR to an Epic directly.** Epics are containers for multiple subtickets.
+- Always link PRs to the **specific subtickets** being addressed, not the parent Epic.
+- When asked to work on "remaining subtickets in an Epic", first identify the specific subticket IDs (e.g., EMITEST-24, EMITEST-25) before starting work.
+- If you cannot determine the subticket IDs, ask the user to clarify which specific tickets to work on.
+- Include all relevant subticket IDs in the PR title or body (e.g., "EMITEST-24, EMITEST-25: Add audio playback and history screen").
+

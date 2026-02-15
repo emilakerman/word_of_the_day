@@ -45,6 +45,14 @@
 - **When work is complete**: Before concluding a task, always check if a PR exists for the branch (e.g. `gh pr list --head <branch-name>`). If a draft PR exists and all work is complete, mark it as ready for review using `gh pr ready <pr-number>`. Never leave a PR in draft state when the work is finished.
 - When marking a PR ready for review, add **Copilot** as a reviewer via the GitHub PR sidebar (or remind the user to do so if automated addition fails).
 
+### Handling PR creation failures
+
+- **IMPORTANT**: If `gh pr create` fails with any error (e.g. "Resource not accessible by integration"), **always** run `gh pr list --head <branch-name>` to check if a PR already exists before telling the user you cannot create one.
+- PRs may be auto-created by the platform when pushing to certain branches. The error message from `gh pr create` can be misleading—it may fail simply because the PR already exists.
+- Never tell the user "I can't create a PR" without first verifying no PR exists for the branch.
+- If a PR exists but is in draft, mark it ready with `gh pr ready <number>`.
+- Only if no PR exists AND creation genuinely fails should you ask the user for help or provide a manual link.
+
 ### Integration tests
 
 - Integration tests live in `integration_test/` and can be run locally with `flutter test integration_test/screenshot_test.dart`.

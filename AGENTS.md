@@ -71,11 +71,23 @@ flutter drive --driver=test_driver/integration_test.dart --target=integration_te
 - Screenshots are saved to the `screenshots/` directory (gitignored).
 - The test driver is at `test_driver/integration_test.dart`.
 
-**If Flutter/emulator is not available in your environment:**
+**If Flutter is not installed in your cloud environment:**
+
+1. Install Flutter first:
+   ```bash
+   cd ~ && curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.0-stable.tar.xz -o flutter.tar.xz && tar xf flutter.tar.xz && rm flutter.tar.xz
+   export PATH="$HOME/flutter/bin:$PATH"
+   cd /workspace && flutter pub get
+   ```
+2. Run unit tests: `flutter test`
+3. Run lint: `flutter analyze`
+
+**If Android emulator is not available (common in cloud environments):**
 
 1. Still add/update the integration test cases for any new UI.
-2. **Explicitly tell the user** that you could not run the integration tests locally and that they should verify the screenshots from CI artifacts after the PR workflow runs.
-3. Do NOT silently skip this step—always communicate whether screenshots were captured or not.
+2. Run unit tests and lint checks to ensure code compiles correctly.
+3. **Explicitly tell the user** that you could not run the integration tests locally due to no emulator, and that they should verify the screenshots from CI artifacts after the PR workflow runs.
+4. Do NOT silently skip this step—always communicate whether screenshots were captured or not.
 
 **What to test:**
 

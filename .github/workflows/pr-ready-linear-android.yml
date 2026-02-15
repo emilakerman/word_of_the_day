@@ -68,4 +68,5 @@ jobs:
           script: |
             flutter pub get
             flutter test
-            flutter install
+            flutter build apk --debug
+            flutter install --debug

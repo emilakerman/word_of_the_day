@@ -53,11 +53,35 @@
 - If a PR exists but is in draft, mark it ready with `gh pr ready <number>`.
 - Only if no PR exists AND creation genuinely fails should you ask the user for help or provide a manual link.
 
-### Integration tests
+### Integration tests and screenshots (REQUIRED for UI changes)
 
-- Integration tests live in `integration_test/` and can be run locally with `flutter test integration_test/screenshot_test.dart`.
-- The test driver is at `test_driver/integration_test.dart`.
+**When making any UI changes (new screens, modified layouts, new components), you MUST:**
+
+1. **Add or update integration tests** in `integration_test/screenshot_test.dart` to cover the new/changed UI.
+2. **Run the integration tests locally** to capture screenshots before marking the PR ready.
+3. **Verify the screenshots** look correct before completing the task.
+
+**How to run integration tests:**
+
+```bash
+# Start an Android emulator first, then run:
+flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart
+```
+
 - Screenshots are saved to the `screenshots/` directory (gitignored).
+- The test driver is at `test_driver/integration_test.dart`.
+
+**If Flutter/emulator is not available in your environment:**
+
+1. Still add/update the integration test cases for any new UI.
+2. **Explicitly tell the user** that you could not run the integration tests locally and that they should verify the screenshots from CI artifacts after the PR workflow runs.
+3. Do NOT silently skip this step—always communicate whether screenshots were captured or not.
+
+**What to test:**
+
+- Each new screen should have at least one screenshot test.
+- Test both light and dark mode for significant UI changes.
+- Test different states (empty state, loading state, error state, populated state) where applicable.
 
 ### Linear
 

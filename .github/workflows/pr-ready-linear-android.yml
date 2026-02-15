@@ -124,14 +124,10 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const fs = require('fs');
-            const path = require('path');
-            
             const prNumber = ${{ steps.pr.outputs.pr_number }};
             const runId = context.runId;
             const repo = context.repo;
             
-            // Get current PR description
             const { data: pr } = await github.rest.pulls.get({
               owner: repo.owner,
               repo: repo.repo,
@@ -140,33 +136,26 @@ jobs:
             
             let body = pr.body || '';
             
-            // Create screenshots section
-            const screenshotSection = `
-## 📱 Screenshots (CI Run #${runId})
-
-Screenshots captured from Android emulator during CI:
-
-| Main Screen | Settings Screen |
-|:-----------:|:---------------:|
-| ![Main Screen](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}/artifacts) | ![Settings Screen](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}/artifacts) |
-
-> **Note:** Download the \`screenshots\` artifact from [CI Run #${runId}](https://github.com/${repo.owner}/${repo.repo}/actions/runs/${runId}) to view all captured screenshots.
->
-> Screenshots include: main_screen, settings_screen, theme_picker, settings_dark_mode, main_screen_dark_mode
-`;
+            const screenshotSection = [
+              '',
+              '## 📱 Screenshots (CI Run #' + runId + ')',
+              '',
+              'Screenshots captured from Android emulator during CI.',
+              '',
+              '**Download:** [screenshots artifact](https://github.com/' + repo.owner + '/' + repo.repo + '/actions/runs/' + runId + ')',
+              '',
+              'Screenshots include: main_screen, settings_screen, theme_picker, settings_dark_mode, main_screen_dark_mode',
+              ''
+            ].join('\n');
             
-            // Check if screenshots section already exists
             const screenshotMarker = '## 📱 Screenshots';
             if (body.includes(screenshotMarker)) {
-              // Replace existing section
               const regex = /## 📱 Screenshots[\s\S]*?(?=\n## |$)/;
               body = body.replace(regex, screenshotSection.trim());
             } else {
-              // Append new section
-              body = body + '\n\n' + screenshotSection;
+              body = body + '\n' + screenshotSection;
             }
             
-            // Update PR description
             await github.rest.pulls.update({
               owner: repo.owner,
               repo: repo.repo,

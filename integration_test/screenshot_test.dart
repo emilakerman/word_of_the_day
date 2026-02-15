@@ -91,6 +91,20 @@ void main() {
       // Screenshot main screen in dark mode
       await takeScreenshot(binding, tester, 'main_screen_dark_mode');
     });
+
+    testWidgets('capture history screen screenshot', (tester) async {
+      app.main();
+      await tester.pumpAndSettle();
+
+      // Navigate to history screen
+      final historyButton = find.byIcon(Icons.history_outlined);
+      expect(historyButton, findsOneWidget);
+      await tester.tap(historyButton);
+      await tester.pumpAndSettle();
+      await Future<void>.delayed(const Duration(milliseconds: 500));
+
+      await takeScreenshot(binding, tester, 'history_screen');
+    });
   });
 }
 

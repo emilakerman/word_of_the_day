@@ -45,15 +45,67 @@
 - **When work is complete**: Before concluding a task, always check if a PR exists for the branch (e.g. `gh pr list --head <branch-name>`). If a draft PR exists and all work is complete, mark it as ready for review using `gh pr ready <pr-number>`. Never leave a PR in draft state when the work is finished.
 - When marking a PR ready for review, add **Copilot** as a reviewer via the GitHub PR sidebar (or remind the user to do so if automated addition fails).
 
-### Integration tests
+### Handling PR creation failures
 
-- Integration tests live in `integration_test/` and can be run locally with `flutter test integration_test/screenshot_test.dart`.
-- The test driver is at `test_driver/integration_test.dart`.
+- **IMPORTANT**: If `gh pr create` fails with any error (e.g. "Resource not accessible by integration"), **always** run `gh pr list --head <branch-name>` to check if a PR already exists before telling the user you cannot create one.
+- PRs may be auto-created by the platform when pushing to certain branches. The error message from `gh pr create` can be misleading—it may fail simply because the PR already exists.
+- Never tell the user "I can't create a PR" without first verifying no PR exists for the branch.
+- If a PR exists but is in draft, mark it ready with `gh pr ready <number>`.
+- Only if no PR exists AND creation genuinely fails should you ask the user for help or provide a manual link.
+
+### Integration tests and screenshots (REQUIRED for UI changes)
+
+**When making any UI changes (new screens, modified layouts, new components), you MUST:**
+
+1. **Add or update integration tests** in `integration_test/screenshot_test.dart` to cover the new/changed UI.
+2. **Run the integration tests locally** to capture screenshots before marking the PR ready.
+3. **Verify the screenshots** look correct before completing the task.
+
+**How to run integration tests:**
+
+```bash
+# Start an Android emulator first, then run:
+flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart
+```
+
 - Screenshots are saved to the `screenshots/` directory (gitignored).
+- The test driver is at `test_driver/integration_test.dart`.
+
+**If Flutter is not installed in your cloud environment:**
+
+1. Install Flutter first:
+   ```bash
+   cd ~ && curl -fsSL https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.24.0-stable.tar.xz -o flutter.tar.xz && tar xf flutter.tar.xz && rm flutter.tar.xz
+   export PATH="$HOME/flutter/bin:$PATH"
+   cd /workspace && flutter pub get
+   ```
+2. Run unit tests: `flutter test`
+3. Run lint: `flutter analyze`
+
+**If Android emulator is not available (common in cloud environments):**
+
+1. Still add/update the integration test cases for any new UI.
+2. Run unit tests and lint checks to ensure code compiles correctly.
+3. **Explicitly tell the user** that you could not run the integration tests locally due to no emulator, and that they should verify the screenshots from CI artifacts after the PR workflow runs.
+4. Do NOT silently skip this step—always communicate whether screenshots were captured or not.
+
+**What to test:**
+
+- Each new screen should have at least one screenshot test.
+- Test both light and dark mode for significant UI changes.
+- Test different states (empty state, loading state, error state, populated state) where applicable.
 
 ### Linear
 
 - When starting work on a ticket, move it from Backlog to **In Progress**.
 - **When a PR is marked ready for review**: Always move the corresponding Linear ticket to **In Review** status. This is required for the CI workflow to run. If you cannot move the ticket automatically, explicitly remind the user to move the Linear ticket to "In Review" before concluding.
 - The CI workflow will only run when the Linear ticket is in "In Review", "Done", or "Canceled" state.
+
+**Epics vs Subtickets:**
+
+- **NEVER link a PR to an Epic directly.** Epics are containers for multiple subtickets.
+- Always link PRs to the **specific subtickets** being addressed, not the parent Epic.
+- When asked to work on "remaining subtickets in an Epic", first identify the specific subticket IDs (e.g., EMITEST-24, EMITEST-25) before starting work.
+- If you cannot determine the subticket IDs, ask the user to clarify which specific tickets to work on.
+- Include all relevant subticket IDs in the PR title or body (e.g., "EMITEST-24, EMITEST-25: Add audio playback and history screen").
 

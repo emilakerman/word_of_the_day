@@ -17,6 +17,7 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> {
   final ThemePreferenceService _themePreference = ThemePreferenceService();
+  final WordSelectionService _wordService = WordSelectionService(words: sampleWords);
   ThemeMode _themeMode = ThemeMode.system;
 
   @override
@@ -37,8 +38,7 @@ class _MainAppState extends State<MainApp> {
 
   @override
   Widget build(BuildContext context) {
-    final wordService = WordSelectionService(words: sampleWords);
-    final todaysWord = wordService.getTodaysWord();
+    final todaysWord = _wordService.getTodaysWord();
 
     return MaterialApp(
       title: 'Word of the Day',

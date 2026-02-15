@@ -103,15 +103,8 @@ jobs:
             flutter pub get
             flutter test
             flutter build apk --debug
-            # Create screenshots directory on host
             mkdir -p screenshots
-            # Run integration tests with flutter drive to capture screenshots on host
-            flutter drive \
-              --driver=test_driver/integration_test.dart \
-              --target=integration_test/screenshot_test.dart \
-              --device-id=emulator-5554 \
-              --screenshot=screenshots || true
-            # List captured screenshots
+            flutter drive --driver=test_driver/integration_test.dart --target=integration_test/screenshot_test.dart --device-id=emulator-5554 --screenshot=screenshots || true
             ls -la screenshots/ || echo "No screenshots captured"
 
       - name: Upload screenshots

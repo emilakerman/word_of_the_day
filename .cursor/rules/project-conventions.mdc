@@ -38,3 +38,6 @@ alwaysApply: true
 
 5. **Platform**
    - iOS and Android are in use; if you add native or plugin behavior, consider both platforms.
+
+6. **Pull requests**
+   - When creating a PR and marking it ready for review, add **Copilot** as a reviewer (e.g. in the GitHub PR sidebar under Reviewers). If using `gh pr create`, open the PR in the browser and add Copilot, or remind the user.

@@ -1,0 +1,28 @@
+---
+description: Dart and Flutter coding standards for Word of the Day
+globs: **/*.dart
+alwaysApply: false
+---
+
+# Dart & Flutter Standards
+
+## Style and correctness
+
+- Use `const` constructors and `final` variables wherever possible.
+- Prefer `super.key` and `super.parameters` in widget constructors.
+- Follow existing `flutter_lints`; do not disable lints without a brief justification in a comment.
+
+## Widgets and UI
+
+- Prefer stateless widgets unless state is needed; extract stateful logic into small, focused widgets or controllers.
+- Keep `build` methods readable: extract large subtrees into named widgets or private methods in the same file.
+- Use the app theme (`Theme.of(context)`, `ThemeData`) instead of hardcoded colors or text styles.
+
+## Async and errors
+
+- Use `async`/`await`; avoid raw `.then()` for sequential logic.
+- Handle errors explicitly (e.g. `try/catch`, `Result`-style types, or user-visible messages); avoid swallowing exceptions.
+
+## Tool scripts
+
+- Code in `tool/` is run with `dart run` (e.g. `dart run tool/generate_curated_words.dart`). Do not assume it runs inside the Flutter app runtime.

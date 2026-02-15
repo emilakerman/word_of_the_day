@@ -131,7 +131,8 @@ void main() {
   });
 }
 
-/// Takes a screenshot and saves it to the screenshots directory.
+/// Takes a screenshot using the integration test binding.
+/// Screenshots are captured by the binding and can be extracted by the test driver.
 Future<void> takeScreenshot(
   IntegrationTestWidgetsFlutterBinding binding,
   WidgetTester tester,
@@ -145,18 +146,9 @@ Future<void> takeScreenshot(
     await tester.pumpAndSettle();
   }
 
-  // Take the screenshot
-  final bytes = await binding.takeScreenshot(name);
-
-  // Save to file (useful for local testing)
-  final screenshotsDir = Directory('screenshots');
-  if (!screenshotsDir.existsSync()) {
-    screenshotsDir.createSync(recursive: true);
-  }
-
-  final file = File('screenshots/$name.png');
-  await file.writeAsBytes(bytes);
+  // Take the screenshot - binding stores it internally
+  await binding.takeScreenshot(name);
 
   // ignore: avoid_print
-  print('Screenshot saved: screenshots/$name.png');
+  print('Screenshot captured: $name');
 }

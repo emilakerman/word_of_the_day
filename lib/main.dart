@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/word_of_the_day_screen.dart';
+import 'screens/settings_screen.dart';
 import 'data/sample_words.dart';
 import 'services/word_selection_service.dart';
 import 'services/theme_preference_service.dart';
@@ -20,6 +21,9 @@ class _MainAppState extends State<MainApp> {
   final WordSelectionService _wordService = WordSelectionService(words: sampleWords);
   ThemeMode _themeMode = ThemeMode.system;
 
+  /// App version from pubspec.yaml
+  static const String _appVersion = '0.1.0';
+
   @override
   void initState() {
     super.initState();
@@ -34,6 +38,18 @@ class _MainAppState extends State<MainApp> {
   Future<void> _onThemeChanged(ThemeMode mode) async {
     await _themePreference.setThemeMode(mode);
     if (mounted) setState(() => _themeMode = mode);
+  }
+
+  void _openSettings(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (context) => SettingsScreen(
+          currentThemeMode: _themeMode,
+          onThemeChanged: _onThemeChanged,
+          appVersion: _appVersion,
+        ),
+      ),
+    );
   }
 
   @override
@@ -60,15 +76,18 @@ class _MainAppState extends State<MainApp> {
         fontFamily: 'Roboto',
       ),
       themeMode: _themeMode,
-      home: WordOfTheDayScreen(
-        word: todaysWord,
-        onThemeChanged: _onThemeChanged,
-        onShare: () {
-          // Share functionality to be implemented
-        },
-        onFavorite: () {
-          // Favorite functionality to be implemented
-        },
+      home: Builder(
+        builder: (context) => WordOfTheDayScreen(
+          word: todaysWord,
+          onThemeChanged: _onThemeChanged,
+          onShare: () {
+            // Share functionality to be implemented
+          },
+          onFavorite: () {
+            // Favorite functionality to be implemented
+          },
+          onSettings: () => _openSettings(context),
+        ),
       ),
     );
   }

@@ -7,7 +7,13 @@ name: PR ready – Linear + Android
 
 on:
   pull_request:
-    types: [opened, ready_for_review]
+    types: [opened, ready_for_review, synchronize]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to run tests for'
+        required: false
+        type: string
 
 permissions:
   contents: read
